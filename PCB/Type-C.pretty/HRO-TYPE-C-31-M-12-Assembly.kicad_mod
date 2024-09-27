@@ -311,7 +311,7 @@
 		(remove_unused_layers no)
 		(uuid "f1593509-2c56-4084-af9b-49c7744a42e3")
 	)
-	(model "${KIPRJMOD}/../Lib/3dmodels/698b116-264-211.STEP"
+	(model "${KIPRJMOD}/3dmodels/698b116-264-211.STEP"
 		(offset
 			(xyz -16 -4.3 -11.5)
 		)
