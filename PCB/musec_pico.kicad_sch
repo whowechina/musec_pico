@@ -2651,6 +2651,18 @@
 		)
 	)
 	(junction
+		(at 343.535 234.315)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "006fb32f-c04a-4c94-9d32-38623cffc1b7")
+	)
+	(junction
+		(at 318.135 234.315)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00d46313-bcf3-4ca5-baf7-e1e5d179b357")
+	)
+	(junction
 		(at 120.65 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2705,6 +2717,12 @@
 		(uuid "1a852dc8-51bf-4486-aa32-14174003a4bd")
 	)
 	(junction
+		(at 305.435 226.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e2b33df-8502-4370-ad6a-ef4ef517dbfe")
+	)
+	(junction
 		(at 269.24 41.275)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2739,6 +2757,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28be35bf-6fa1-4bed-a2d9-1d829f8ef639")
+	)
+	(junction
+		(at 330.835 226.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33354208-7cd2-4f58-a5cc-04de62e21f73")
 	)
 	(junction
 		(at 171.45 170.18)
@@ -2951,6 +2975,12 @@
 		(uuid "7acdc019-b6d7-4b56-84e2-01e5c273f723")
 	)
 	(junction
+		(at 343.535 226.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c347c09-bdca-4a8e-87c0-5285b6adcc29")
+	)
+	(junction
 		(at 311.15 160.655)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2967,6 +2997,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "840712b1-f0f8-418d-9f31-558c4697d303")
+	)
+	(junction
+		(at 305.435 234.315)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8722640e-5fae-4ed7-9dfe-59b017468e06")
 	)
 	(junction
 		(at 296.545 106.045)
@@ -3033,6 +3069,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b62aa956-9311-4f88-9886-280bb183eeb2")
+	)
+	(junction
+		(at 330.835 234.315)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7ba05c6-458c-48df-b834-298d8f831d37")
+	)
+	(junction
+		(at 318.135 226.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9a41b8c-fb1c-4f19-98f9-3d57cbece1bc")
 	)
 	(junction
 		(at 67.945 46.355)
@@ -3364,6 +3412,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.835 226.695) (xy 343.535 226.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058a6922-8963-41ac-a06d-4c21c1e2082b")
+	)
+	(wire
+		(pts
 			(xy 131.445 88.265) (xy 139.7 88.265)
 		)
 		(stroke
@@ -3611,6 +3669,16 @@
 			(type default)
 		)
 		(uuid "221c3b51-c6ff-4221-b2b8-f76163d5da28")
+	)
+	(wire
+		(pts
+			(xy 305.435 234.315) (xy 318.135 234.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2361ecaf-e2df-4990-be03-3a2a353fed7d")
 	)
 	(wire
 		(pts
@@ -3994,6 +4062,16 @@
 	)
 	(wire
 		(pts
+			(xy 343.535 234.315) (xy 356.235 234.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aa70e25-a33d-48aa-8d95-ff09123c90f2")
+	)
+	(wire
+		(pts
 			(xy 233.045 60.96) (xy 233.045 39.37)
 		)
 		(stroke
@@ -4134,6 +4212,16 @@
 	)
 	(wire
 		(pts
+			(xy 343.535 226.695) (xy 356.235 226.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6606e137-32e8-45c1-9be7-260beeddae6f")
+	)
+	(wire
+		(pts
 			(xy 209.55 170.18) (xy 222.25 170.18)
 		)
 		(stroke
@@ -4161,6 +4249,16 @@
 			(type default)
 		)
 		(uuid "68c33f15-b80e-4a1a-8aa4-da6e4dd28dd0")
+	)
+	(wire
+		(pts
+			(xy 318.135 226.695) (xy 330.835 226.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6971d69d-8ad6-4fdb-8bfe-8ee678b5e123")
 	)
 	(wire
 		(pts
@@ -4301,6 +4399,16 @@
 			(type default)
 		)
 		(uuid "77f759ea-43c7-4c96-8f5a-fd4b5493e0be")
+	)
+	(wire
+		(pts
+			(xy 305.435 226.695) (xy 318.135 226.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792e166e-1541-46b7-9a52-10661726494b")
 	)
 	(wire
 		(pts
@@ -5084,6 +5192,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.135 234.315) (xy 330.835 234.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba0b790-87fd-403e-a984-d3df90d5b2fb")
+	)
+	(wire
+		(pts
 			(xy 286.385 60.96) (xy 280.67 60.96)
 		)
 		(stroke
@@ -5191,6 +5309,16 @@
 			(type default)
 		)
 		(uuid "d5ed2259-10da-4753-abcc-b945a4e9fc3c")
+	)
+	(wire
+		(pts
+			(xy 330.835 234.315) (xy 343.535 234.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d65de5b4-ad94-4af4-b308-aa66d1e588ce")
 	)
 	(wire
 		(pts
@@ -6474,6 +6602,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 330.835 230.505 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "008dc9be-7156-45d4-8aa0-87ab55399ab8")
+		(property "Reference" "C8"
+			(at 334.01 229.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 334.01 231.7749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 331.8002 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 330.835 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.835 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a919a5f3-3e85-47e8-99d5-b2874afa509b")
+		)
+		(pin "2"
+			(uuid "223aa74a-d0de-41fd-8183-1e6337fe9b18")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 318.77 124.46 0)
 		(unit 1)
@@ -6545,6 +6743,76 @@
 			(project ""
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "JA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 305.435 230.505 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09f4e675-0bbf-4f20-bab5-788115abed2a")
+		(property "Reference" "C6"
+			(at 308.61 229.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 308.61 231.7749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 306.4002 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 305.435 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 305.435 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef5af7d2-2088-4564-8cf4-2aa2b2584c90")
+		)
+		(pin "2"
+			(uuid "01b07cec-ce86-44b1-99d9-902a90116b09")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -7733,6 +8001,76 @@
 			(project ""
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 343.535 230.505 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52d9a3e3-eff8-491d-8844-91b651f01f05")
+		(property "Reference" "C9"
+			(at 346.71 229.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 346.71 231.7749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 344.5002 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 343.535 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 343.535 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e1a86fc-0186-4cf5-9470-839ffe8199c5")
+		)
+		(pin "2"
+			(uuid "23c17ef5-3e6f-4c14-9e32-9cf7f55613aa")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -9718,6 +10056,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 318.135 230.505 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bce60602-ece2-447d-ba0b-ca9e047b5580")
+		(property "Reference" "C7"
+			(at 321.31 229.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 321.31 231.7749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 319.1002 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 318.135 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 318.135 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84c102db-8e27-43aa-b8ee-6618a66f862a")
+		)
+		(pin "2"
+			(uuid "42ec6e17-3d44-4d01-bd11-9c08fdbbeb65")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "musec_pico:WS2812B_Unified")
 		(at 69.85 207.01 0)
 		(unit 1)
@@ -9935,6 +10343,71 @@
 			(project "musec_pico"
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 305.435 226.695 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd883dcb-b31f-4c58-8004-9c115721f89b")
+		(property "Reference" "#PWR07"
+			(at 305.435 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 302.26 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 305.435 226.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 305.435 226.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 305.435 226.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2702a4fa-3cab-436b-8831-9290329eed4d")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -10353,6 +10826,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 305.435 234.315 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0f8cc17-d1cc-43d4-b6a9-20e9a6d6939a")
+		(property "Reference" "#PWR06"
+			(at 305.435 240.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 305.562 238.7092 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 305.435 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 305.435 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 305.435 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33a58d37-e82c-4af2-91cf-5490f5cb6cbf")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 133.35 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10623,6 +11161,76 @@
 			(project "musec_pico"
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 356.235 230.505 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3cd0770-9969-4ade-806f-ab173dafbd41")
+		(property "Reference" "C10"
+			(at 359.41 229.2349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 359.41 231.7749 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 357.2002 234.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.235 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 356.235 230.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4992eb81-87cb-4368-a6fd-a686131cabd5")
+		)
+		(pin "2"
+			(uuid "cec490a0-f343-49cc-985c-44e37f590319")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C10")
 					(unit 1)
 				)
 			)
