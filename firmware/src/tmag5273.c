@@ -111,6 +111,14 @@ bool tmag5273_is_present()
     return false;
 }
 
+bool tmag5273_change_addr(uint8_t i2c_addr)
+{
+    tmag5273_write_reg(0x0c, (i2c_addr << 1) | 0x01);
+    instances[current_instance].addr = i2c_addr;
+    uint8_t new_addr = tmag5273_read_reg(0x0c) >> 1;
+    return new_addr == i2c_addr;
+}
+
 bool tmag5273_init_sensor()
 {
     tmag5273_write_reg(0x03, 0x01 << 2); // Enable angle calculation
