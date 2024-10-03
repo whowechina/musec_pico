@@ -12,7 +12,7 @@
 
 #include "hardware/i2c.h"
 
-void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port, uint8_t i2c_addr);
+void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port);
 void tmag5273_use(unsigned instance);
 bool tmag5273_is_present();
 bool tmag5273_change_addr(uint8_t i2c_addr);

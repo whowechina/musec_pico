@@ -20,14 +20,15 @@
 static struct {
     i2c_inst_t *port;
     uint8_t addr;
+    uint16_t cache;
 } instances[16] = { { i2c0, TMAG5273_DEF_ADDR } };
+#define INSTANCE_NUM count_of(instances)
 
 static int current_instance = 0;
+#define INSTANCE instances[current_instance]
 
-#define INSTANCE_NUM (sizeof(instances) / sizeof(instances[0]))
-#define I2C_PORT instances[current_instance].port
-#define I2C_ADDR instances[current_instance].addr
-
+#define I2C_PORT INSTANCE.port
+#define I2C_ADDR INSTANCE.addr
 
 static void write_reg(uint8_t reg, uint8_t value)
 {
@@ -35,23 +36,6 @@ static void write_reg(uint8_t reg, uint8_t value)
     i2c_write_blocking_until(I2C_PORT, I2C_ADDR, data, 2, false,
                              time_us_64() + IO_TIMEOUT_US);
 }
-
-/*
-static void write_reg16(uint8_t reg, uint16_t value)
-{
-    uint8_t data[3] = { reg, value >> 8, value & 0xff };
-    i2c_write_blocking_until(I2C_PORT, I2C_ADDR, data, 3, false,
-                             time_us_64() + IO_TIMEOUT_US);
-}
-
-static void write_reg_list(const uint16_t *list)
-{
-    const uint16_t *regs = list + 1;
-    for (int i = 0; i < *list; i++) {
-        write_reg(regs[i] >> 8, regs[i] & 0xff);
-    }
-}
-*/
 
 static uint8_t read_reg(uint8_t reg)
 {
@@ -63,25 +47,6 @@ static uint8_t read_reg(uint8_t reg)
     return value;
 }
 
-static uint16_t read_reg16(uint8_t reg)
-{
-    uint8_t value[2];
-    i2c_write_blocking_until(I2C_PORT, I2C_ADDR, &reg, 1, true,
-                             time_us_64() + IO_TIMEOUT_US);
-    i2c_read_blocking_until(I2C_PORT, I2C_ADDR, value, 2, false,
-                             time_us_64() + IO_TIMEOUT_US);
-    return (value[0] << 8) | value[1];
-}
-
-/*
-static void write_many(uint8_t reg, const uint8_t *src, uint8_t len)
-{
-    i2c_write_blocking_until(I2C_PORT, I2C_ADDR, &reg, 1, true,
-                             time_us_64() + IO_TIMEOUT_US);
-    i2c_write_blocking_until(I2C_PORT, I2C_ADDR, src, len, false,
-                             time_us_64() + IO_TIMEOUT_US);
-}
-
 static void read_many(uint8_t reg, uint8_t *dst, uint8_t len)
 {
     i2c_write_blocking_until(I2C_PORT, I2C_ADDR, &reg, 1, true,
@@ -89,13 +54,16 @@ static void read_many(uint8_t reg, uint8_t *dst, uint8_t len)
     i2c_read_blocking_until(I2C_PORT, I2C_ADDR, dst, len, false,
                              time_us_64() + IO_TIMEOUT_US * len);
 }
-*/
 
-void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port, uint8_t i2c_addr)
+void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port)
 {
     if (instance < INSTANCE_NUM) {
-        instances[instance].port = i2c_port;
-        instances[instance].addr = i2c_addr ? i2c_addr : TMAG5273_DEF_ADDR;
+        current_instance = instance;
+        INSTANCE.port = i2c_port;
+        INSTANCE.addr = TMAG5273_DEF_ADDR;
+        if (instance > 0) {
+            tmag5273_change_addr(TMAG5273_DEF_ADDR + instance);
+        }
     }
 }
 
@@ -114,7 +82,7 @@ bool tmag5273_is_present()
 bool tmag5273_change_addr(uint8_t i2c_addr)
 {
     tmag5273_write_reg(0x0c, (i2c_addr << 1) | 0x01);
-    instances[current_instance].addr = i2c_addr;
+    INSTANCE.addr = i2c_addr;
     uint8_t new_addr = tmag5273_read_reg(0x0c) >> 1;
     return new_addr == i2c_addr;
 }
@@ -139,5 +107,11 @@ void tmag5273_write_reg(uint8_t addr, uint8_t value)
 
 uint16_t tmag5273_read_angle()
 {
-    return (read_reg16(0x19) & 0x1fff) >> 4;
+    uint8_t buf[3] = { 0 };
+    read_many(0x18, buf, sizeof(buf));
+    if (buf[0] & 0x01) {
+        INSTANCE.cache = (buf[1] << 8 | buf[2]) & 0x1fff;
+    }
+    printf("%4d(%d) ", INSTANCE.addr, current_instance);
+    return INSTANCE.cache;
 }

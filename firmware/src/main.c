@@ -56,9 +56,10 @@ static void core1_loop()
 static void read_spin()
 {
     uint16_t angle = tmag5273_read_angle();
-    printf("%5d:", angle);
+    float deg = angle / 16.0f;
+    printf("%7.2f:", deg);
 
-    angle /= 10;
+    angle /= 160;
     for (int i = 0; i < 36; i++) {
         char c = (i == angle) ? '*' : ' ';
         printf("%c", c);
@@ -135,8 +136,14 @@ void init()
     gpio_pull_up(BUS_I2C_SDA);
     gpio_pull_up(BUS_I2C_SCL);
 
-    tmag5273_init(0, BUS_I2C, 0);
-    tmag5273_use(0);
+    gpio_init(21);
+    gpio_set_dir(21, GPIO_OUT);
+    gpio_put(21, 1);
+
+    sleep_ms(1);
+
+    tmag5273_init(1, BUS_I2C);
+    tmag5273_use(1);
     tmag5273_init_sensor();
 
     cli_init("musec_pico>", "\n   << Musec Pico Controller >>\n"
