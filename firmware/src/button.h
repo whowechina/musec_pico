@@ -3,8 +3,8 @@
  * WHowe <github.com/whowechina>
  */
 
-#ifndef BUTTONS_H
-#define BUTTONS_H
+#ifndef BUTTON_H
+#define BUTTON_H
 
 #include <stdint.h>
 #include <stdbool.h>

@@ -25,8 +25,7 @@ static uint64_t sw_freeze_time[BUTTON_NUM];
 
 void button_init()
 {
-    for (int i = 0; i < BUTTON_NUM; i++)
-    {
+    for (int i = 0; i < BUTTON_NUM; i++) {
         sw_val[i] = false;
         sw_freeze_time[i] = 0;
         int8_t gpio = button_gpio[i];
