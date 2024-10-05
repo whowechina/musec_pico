@@ -32,8 +32,7 @@
 
 #include "light.h"
 #include "button.h"
-
-#include "tmag5273.h"
+#include "spin.h"
 
 static void run_lights()
 {
@@ -55,14 +54,10 @@ static void core1_loop()
 
 static void read_spin()
 {
-    uint16_t angle = tmag5273_read_angle();
-    float deg = angle / 16.0f;
-    printf("%7.2f:", deg);
-
-    angle /= 160;
-    for (int i = 0; i < 36; i++) {
-        char c = (i == angle) ? '*' : ' ';
-        printf("%c", c);
+    for (int i = 0; i < spin_num(); i++) {
+        uint16_t angle = spin_read(i);
+        float deg = angle / 16.0f;
+        printf("  %d:%7.2f", i, deg);
     }
     printf("\n");
 }
@@ -78,9 +73,9 @@ static void core0_loop()
         cli_fps_count(0);
 
         button_update();
+        spin_update();
 
         hid_update();
-
         read_spin();
 
         sleep_us(900);
@@ -127,24 +122,7 @@ void init()
 
     light_init();
     button_init();
-
-    i2c_init(BUS_I2C, BUS_I2C_FREQ);
-    gpio_init(BUS_I2C_SDA);
-    gpio_init(BUS_I2C_SCL);
-    gpio_set_function(BUS_I2C_SDA, GPIO_FUNC_I2C);
-    gpio_set_function(BUS_I2C_SCL, GPIO_FUNC_I2C);
-    gpio_pull_up(BUS_I2C_SDA);
-    gpio_pull_up(BUS_I2C_SCL);
-
-    gpio_init(21);
-    gpio_set_dir(21, GPIO_OUT);
-    gpio_put(21, 1);
-
-    sleep_ms(1);
-
-    tmag5273_init(1, BUS_I2C);
-    tmag5273_use(1);
-    tmag5273_init_sensor();
+    spin_init();
 
     cli_init("musec_pico>", "\n   << Musec Pico Controller >>\n"
                             " https://github.com/whowechina\n\n");

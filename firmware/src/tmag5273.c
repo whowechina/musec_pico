@@ -61,9 +61,7 @@ void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port)
         current_instance = instance;
         INSTANCE.port = i2c_port;
         INSTANCE.addr = TMAG5273_DEF_ADDR;
-        if (instance > 0) {
-            tmag5273_change_addr(TMAG5273_DEF_ADDR + instance);
-        }
+        tmag5273_change_addr(TMAG5273_DEF_ADDR + 1 + instance);
     }
 }
 
@@ -112,6 +110,5 @@ uint16_t tmag5273_read_angle()
     if (buf[0] & 0x01) {
         INSTANCE.cache = (buf[1] << 8 | buf[2]) & 0x1fff;
     }
-    printf("%4d(%d) ", INSTANCE.addr, current_instance);
     return INSTANCE.cache;
 }

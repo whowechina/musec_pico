@@ -134,7 +134,7 @@ static void handle_i2c(int argc, char *argv[])
         return;
     }
 
-    const char *choices[] = {"set", "read"};
+    const char *choices[] = {"set", "read", "change"};
     int match = cli_match_prefix(choices, count_of(choices), argv[0]);
     if (match < 0) {
         return;
@@ -148,6 +148,8 @@ static void handle_i2c(int argc, char *argv[])
 
         uint16_t angle = tmag5273_read_angle();
         printf("angle: %d (%04x)\n", angle, angle);
+    } else if (match == 2) {
+        tmag5273_change_addr(0x12);
     }
 }
 
