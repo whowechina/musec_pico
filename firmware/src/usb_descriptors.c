@@ -36,7 +36,7 @@ tusb_desc_device_t desc_device_joy = {
     .bDeviceProtocol = 0x00,
     .bMaxPacketSize0 = CFG_TUD_ENDPOINT0_SIZE,
 
-    .idVendor = 0x0ca3,
+    .idVendor = 0xcabe,
     .idProduct = 0x0021,
     .bcdDevice = 0x0100,
 
@@ -59,10 +59,7 @@ uint8_t const* tud_descriptor_device_cb(void) {
 
 uint8_t const desc_hid_report_joy[] = {
     MUSEC_PICO_REPORT_DESC_JOYSTICK,
-};
-
-uint8_t const desc_hid_report_nkro[] = {
-    MUSEC_PICO_REPORT_DESC_NKRO,
+    MUSEC_PICO_REPORT_DESC_LIGHTS,
 };
 
 // Invoked when received GET HID REPORT DESCRIPTOR
@@ -73,8 +70,6 @@ uint8_t const* tud_hid_descriptor_report_cb(uint8_t itf)
     switch (itf) {
         case 0:
             return desc_hid_report_joy;
-        case 1:
-            return desc_hid_report_nkro;
         default:
             return NULL;
     }
@@ -83,27 +78,17 @@ uint8_t const* tud_hid_descriptor_report_cb(uint8_t itf)
 // Configuration Descriptor
 //--------------------------------------------------------------------+
 
-enum { ITF_NUM_JOY, ITF_NUM_NKRO,
-       ITF_NUM_CLI, ITF_NUM_CLI_DATA, ITF_NUM_AIME, ITF_NUM_AIME_DATA,
-       ITF_NUM_TOTAL };
+enum { ITF_NUM_JOY, ITF_NUM_CLI, ITF_NUM_CLI_DATA, ITF_NUM_TOTAL };
 
 #define CONFIG_TOTAL_LEN (TUD_CONFIG_DESC_LEN + \
-                          TUD_HID_INOUT_DESC_LEN * 1 + \
                           TUD_HID_DESC_LEN * 1 + \
-                          TUD_CDC_DESC_LEN * 2)
+                          TUD_CDC_DESC_LEN * 1)
 
-#define EPNUM_JOY_OUT 0x01
-#define EPNUM_JOY_IN 0x81
-
-#define EPNUM_NKRO 0x87
+#define EPNUM_JOY 0x81
 
 #define EPNUM_CLI_NOTIF 0x89
 #define EPNUM_CLI_OUT   0x0a
 #define EPNUM_CLI_IN    0x8a
-
-#define EPNUM_AIME_NOTIF 0x8b
-#define EPNUM_AIME_OUT   0x0c
-#define EPNUM_AIME_IN    0x8c
 
 uint8_t const desc_configuration_joy[] = {
     // Config number, interface count, string index, total length, attribute,
@@ -113,20 +98,12 @@ uint8_t const desc_configuration_joy[] = {
 
     // Interface number, string index, protocol, report descriptor len, EP In
     // address, size & polling interval
-    TUD_HID_INOUT_DESCRIPTOR(ITF_NUM_JOY, 4, HID_ITF_PROTOCOL_NONE,
-                       sizeof(desc_hid_report_joy), EPNUM_JOY_OUT, EPNUM_JOY_IN,
+    TUD_HID_DESCRIPTOR(ITF_NUM_JOY, 4, HID_ITF_PROTOCOL_NONE,
+                       sizeof(desc_hid_report_joy), EPNUM_JOY,
                        CFG_TUD_HID_EP_BUFSIZE, 1),
-
-    TUD_HID_DESCRIPTOR(ITF_NUM_NKRO, 5, HID_ITF_PROTOCOL_NONE,
-                       sizeof(desc_hid_report_nkro), EPNUM_NKRO,
-                       CFG_TUD_HID_EP_BUFSIZE, 1),
-
-    TUD_CDC_DESCRIPTOR(ITF_NUM_CLI, 6, EPNUM_CLI_NOTIF,
+ 
+    TUD_CDC_DESCRIPTOR(ITF_NUM_CLI, 5, EPNUM_CLI_NOTIF,
                        8, EPNUM_CLI_OUT, EPNUM_CLI_IN, 64),
-
-    TUD_CDC_DESCRIPTOR(ITF_NUM_AIME, 7, EPNUM_AIME_NOTIF,
-                       8, EPNUM_AIME_OUT, EPNUM_AIME_IN, 64),
-
 };
 
 // Invoked when received GET CONFIGURATION DESCRIPTOR
@@ -143,13 +120,29 @@ static char serial_number_str[24] = "123456\0";
 
 static const char *string_desc_arr[] = {
     (const char[]){0x09, 0x04},  // 0: is supported language is English (0x0409)
-    "SEGA", // 1: Manufacturer
-    "Musec Pico", // 2: Product
-    serial_number_str, // 3: Serials, use chip ID
-    "I/O CONTROL BD;15257;01;90;1831;6679A;00;GOUT=14_ADIN=8,E_ROTIN=4_COININ=2_SWIN=2,E_UQ1=41,6;",
-    "Musec Pico NKRO",
-    "Musec Pico CLI",
-    "Mai Pico AIME Port",
+    "WHowe",                     // 1: Manufacturer
+    "Musec Pico",                // 2: Product
+    serial_number_str,           // 3: Serials, use chip ID
+    "Musec Pico Joystick",
+    "Musec Pico CLI Port",
+    "Spinner 1 R",
+    "Spinner 1 G",
+    "Spinner 1 B",
+    "Spinner 2 R",
+    "Spinner 2 G",
+    "Spinner 2 B",
+    "Spinner 3 R",
+    "Spinner 3 G",
+    "Spinner 3 B",
+    "Spinner 4 R",
+    "Spinner 4 G",
+    "Spinner 4 B",
+    "Spinner 5 R",
+    "Spinner 5 G",
+    "Spinner 5 B",
+    "Title R",
+    "Title G",
+    "Title B",
 };
 
 // Invoked when received GET STRING DESCRIPTOR request

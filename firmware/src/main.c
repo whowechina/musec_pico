@@ -28,14 +28,24 @@
 #include "cli.h"
 #include "commands.h"
 
-#include "hid.h"
-
 #include "light.h"
 #include "button.h"
 #include "spin.h"
 
 static void run_lights()
 {
+    uint32_t phase = time_us_32() >> 16;
+    uint16_t button = button_read();
+    for (int i = 0; i < 5; i++) {
+        uint32_t color = rgb32_from_hsv(phase + i * 35, 255, 255);
+        if (button & (1 << i)) {
+            color = rgb32(255, 255, 255, false);
+        }
+        light_set_main(i, color, false);
+    }
+
+    light_set_start((button & 0x20) ? 0xffffff : rgb32(255, 10, 10, false), false);
+    light_set_aux((button & 0x40) ? 0xffffff : rgb32(180, 180, 10, false), false);
 }
 
 static mutex_t core1_io_lock;
@@ -52,14 +62,21 @@ static void core1_loop()
     }
 }
 
-static void read_spin()
+struct __attribute__((packed)) {
+    uint8_t buttons;
+    uint8_t joy[6];
+} hid_report = {0};
+
+static void hid_update()
 {
-    for (int i = 0; i < spin_num(); i++) {
-        uint16_t angle = spin_read(i);
-        float deg = angle / 16.0f;
-        printf("  %d:%7.2f", i, deg);
+    uint16_t buttons = button_read();
+    hid_report.buttons = buttons;
+    for (int i = 0; i < 5; i++) {
+        hid_report.joy[i] = spin_units(i);
     }
-    printf("\n");
+    if (tud_hid_ready()) {
+        tud_hid_n_report(0, REPORT_ID_JOYSTICK, &hid_report, sizeof(hid_report));
+    }
 }
 
 static void core0_loop()
@@ -76,7 +93,6 @@ static void core0_loop()
         spin_update();
 
         hid_update();
-        read_spin();
 
         sleep_us(900);
     }
@@ -138,12 +154,6 @@ int main(void)
     return 0;
 }
 
-struct __attribute__((packed)) {
-    uint16_t buttons;
-    uint8_t  HAT;
-    uint32_t axis;
-} hid_joy_out = {0};
-
 // Invoked when received GET_REPORT control request
 // Application must fill buffer report's content and return its length.
 // Return zero will cause the stack to STALL request
@@ -161,5 +171,13 @@ void tud_hid_set_report_cb(uint8_t itf, uint8_t report_id,
                            hid_report_type_t report_type, uint8_t const *buffer,
                            uint16_t bufsize)
 {
-    hid_proc(buffer, bufsize);
+    if ((report_id == REPORT_ID_LIGHTS) && (bufsize >= 18)) {
+        printf("Set from USB %d-%d: %d\n", report_id, report_type, bufsize);
+        for (int i = 0; i < 5; i++) {
+            uint32_t color = rgb32(buffer[i * 3], buffer[i * 3 + 1], buffer[i * 3 + 2], false);
+            light_set_main(i, color, true);
+        }
+        light_set_start(rgb32(buffer[15], buffer[16], buffer[17], false), true);
+        light_set_aux(rgb32(buffer[15], buffer[16], buffer[17], false), true);
+    }
 }

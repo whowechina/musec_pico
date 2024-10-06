@@ -14,7 +14,7 @@
 #define BUS_I2C_FREQ 400*1000
 
 #define SPIN_DEF { 13, 12, 11, 10, 9 }
-#define BUTTON_DEF { 16, 17, 18, 19, 20, 21, 22, 2 }
+#define BUTTON_DEF { 16, 17, 18, 19, 20, 22, 21, 2 }
 
 #else
 

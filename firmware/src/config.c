@@ -12,20 +12,8 @@
 musec_cfg_t *musec_cfg;
 
 static musec_cfg_t default_cfg = {
-    .lever = {
-         2000, 2500, 0,
-    },
-    .light = {
-        .level = 128,
-        .reserved = { 0 },
-    },
-    .tof = {
-        .roi = 12,
-        .reserved = { 0 },
-    },
-    .sound = {
-        .volume = 127,
-        .reserved = { 0 },
+    .spin = {
+        .units_per_turn = 80,
     },
     .hid = {
         .joy = 1,

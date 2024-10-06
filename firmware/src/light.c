@@ -20,9 +20,9 @@
 #include "board_defs.h"
 #include "config.h"
 
-#define HID_TIMEOUT 300*1000*1000
+#define HID_TIMEOUT 10*1000*1000
 
-static uint32_t buf_rgb[37]; // left 3 + right 3 + button 4 * 7 + indicator 5
+static uint32_t buf_rgb[22]; // button 4 * 5 + aux * 2
 
 static inline uint32_t _rgb32(uint32_t c1, uint32_t c2, uint32_t c3, bool gamma_fix)
 {
@@ -131,64 +131,42 @@ void light_set(uint8_t index, uint32_t color)
     buf_rgb[index] = apply_level(color);
 }
 
-void light_set_main(uint8_t index, uint32_t color, bool hid)
+static bool bypass_check(bool hid)
 {
     static uint64_t hid_timeout = 0;
     uint64_t now = time_us_64();
-    if (!hid && (now < hid_timeout)) {
+
+    if (hid) {
+        hid_timeout = now + HID_TIMEOUT;
+        return false;
+    }
+
+    return now < hid_timeout;
+}
+
+void light_set_main(uint8_t index, uint32_t color, bool hid)
+{
+    if (bypass_check(hid)) {
         return;
     }
 
-    if (hid) {
-        hid_timeout = time_us_64() + HID_TIMEOUT;
-    }
-
-    if (index < 3) {
-        light_set(index * 4 + 4, color);
-        light_set(index * 4 + 5, color);
-        light_set(index * 4 + 6, color);
-        light_set(index * 4 + 7, color);
-    } else if (index < 6) {
-        light_set(index * 4 + 9, color);
-        light_set(index * 4 + 10, color);
-        light_set(index * 4 + 11, color);
-        light_set(index * 4 + 12, color);
+    for (int i = 0; i < 4; i++) {
+        light_set(index * 4 + i, color);
     }
 }
 
-void light_set_aux(uint8_t index, uint32_t color)
+void light_set_start(uint32_t color, bool hid)
 {
-    if (index == 0) {
-        light_set(0, color);
-    } else if (index == 1) {
-        light_set(36, color);
+    if (bypass_check(hid)) {
+        return;
     }
+    light_set(20, color);
 }
 
-void light_set_wad(uint8_t index, uint32_t color)
+void light_set_aux(uint32_t color, bool hid)
 {
-    if (index == 0) {
-        light_set(1, color);
-        light_set(2, color);
-        light_set(3, color);
-    } else if (index == 1) {
-        light_set(33, color);
-        light_set(34, color);
-        light_set(35, color);
+    if (bypass_check(hid)) {
+        return;
     }
-}
-
-void light_set_pos(uint8_t pos, uint32_t color)
-{
-    pos = pos * 5 / 256;
-    for (int i = 0; i < 5; i++) {
-        light_set(16 + i, (i == pos) ? color : 0);
-    }
-}
-
-void light_set_aime(uint32_t color)
-{
-    for (int i = 0; i < 5; i++) {
-        light_set(16 + i, color);
-    }
+    light_set(21, color);
 }
