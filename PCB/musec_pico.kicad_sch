@@ -5,6 +5,145 @@
 	(uuid "2e3f5573-c264-4a8b-a2f0-0e6473d39aad")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016) hide)
@@ -926,6 +1065,188 @@
 				)
 			)
 		)
+		(symbol "musec_pico:PJ313"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PJ313"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "musec_pico:PJ313"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "3.5mm PJ313"
+				(at -0.508 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PJ313_0_1"
+				(rectangle
+					(start -10.16 -3.3191)
+					(end -7.62 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -7.62 3.81)
+					(end 6.35 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54) (xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 2.54) (xy -5.08 2.54) (xy -5.08 -2.54) (xy -5.715 -3.175) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PJ313_1_1"
+				(pin passive line
+					(at 8.89 2.54 180)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "R"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 8.89 -2.54 180)
+					(length 2.54)
+					(name "T"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "musec_pico:PiPico"
 			(pin_names
 				(offset 1.016)
@@ -949,7 +1270,7 @@
 					)
 				)
 			)
-			(property "Footprint" "groove_pico:RPi_Pico_SMD_Pins"
+			(property "Footprint" "musec_pico:RPi_Pico_SMD_Pins"
 				(at 0 0 90)
 				(effects
 					(font
@@ -2315,9 +2636,9 @@
 		)
 		(symbol "power:+3V3"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2365,7 +2686,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2415,8 +2736,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3V3"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2435,9 +2756,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2485,7 +2806,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2535,8 +2856,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2555,9 +2876,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2605,7 +2926,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2631,8 +2952,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2703,6 +3024,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1201ab72-42bf-4722-8646-dadaf0221fae")
+	)
+	(junction
+		(at 63.5 97.155)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13396a9b-665d-44b9-a92b-fd6433e65cad")
 	)
 	(junction
 		(at 85.725 108.585)
@@ -2781,6 +3108,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "381d8880-b3fd-4f73-ad1b-e7625f56cb58")
+	)
+	(junction
+		(at 63.5 99.695)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ba9c70b-ed75-4293-a44a-375f2538fdc7")
 	)
 	(junction
 		(at 82.55 199.39)
@@ -2889,6 +3222,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b0ecec1-0cb9-406f-8585-a2340eef6b55")
+	)
+	(junction
+		(at 63.5 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61d9d347-3822-474c-83c7-1ba5faa9628a")
 	)
 	(junction
 		(at 60.325 41.275)
@@ -3089,6 +3428,12 @@
 		(uuid "ba37d704-4b6a-4ae5-b6f6-03b00a6bc144")
 	)
 	(junction
+		(at 73.025 102.235)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba461f1d-7a9b-4296-9d90-5aa05aeeeda8")
+	)
+	(junction
 		(at 294.005 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3135,6 +3480,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c46e1585-3364-4b5e-af2c-b51f93909ea8")
+	)
+	(junction
+		(at 63.5 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c657e04e-8486-48d5-9ec8-e3d652435544")
 	)
 	(junction
 		(at 209.55 170.18)
@@ -3362,6 +3713,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 97.155) (xy 57.15 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00d7dae8-6a06-483f-9753-d7685f19c315")
+	)
+	(wire
+		(pts
 			(xy 325.755 100.965) (xy 330.835 100.965)
 		)
 		(stroke
@@ -3549,6 +3910,26 @@
 			(type default)
 		)
 		(uuid "113a5723-b992-4056-9a1e-c806d23524a5")
+	)
+	(wire
+		(pts
+			(xy 73.025 119.38) (xy 73.025 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1160cb47-1cd8-4c3b-9a83-ca6cfbb62f7f")
+	)
+	(wire
+		(pts
+			(xy 73.025 88.265) (xy 95.885 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12e8a39f-fb2f-458d-af80-6502fa217b63")
 	)
 	(wire
 		(pts
@@ -3762,6 +4143,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 116.84) (xy 63.5 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac3cbe1-f262-435a-affb-ff0649e7da22")
+	)
+	(wire
+		(pts
 			(xy 348.615 146.05) (xy 358.14 146.05)
 		)
 		(stroke
@@ -3779,6 +4170,16 @@
 			(type default)
 		)
 		(uuid "2f67e925-6f9b-4673-ae8b-ec21254cfabc")
+	)
+	(wire
+		(pts
+			(xy 63.5 99.695) (xy 63.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "329f41cd-49de-4af0-a244-4eaeb697aaea")
 	)
 	(wire
 		(pts
@@ -3962,6 +4363,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 88.265) (xy 63.5 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0043d0-9da2-4b42-b248-035e21981003")
+	)
+	(wire
+		(pts
 			(xy 340.995 165.735) (xy 340.995 177.8)
 		)
 		(stroke
@@ -4122,6 +4533,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 102.235) (xy 73.025 102.235)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5db86d48-13aa-4f89-851d-12c857cf8030")
+	)
+	(wire
+		(pts
 			(xy 116.205 53.975) (xy 55.245 53.975)
 		)
 		(stroke
@@ -4239,6 +4660,16 @@
 			(type default)
 		)
 		(uuid "67fe432d-8f9f-4736-b4ab-8582c19a8098")
+	)
+	(wire
+		(pts
+			(xy 63.5 114.3) (xy 63.5 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68c2c90f-01c8-45e8-bd0c-01a93abc2005")
 	)
 	(wire
 		(pts
@@ -4422,6 +4853,26 @@
 	)
 	(wire
 		(pts
+			(xy 57.785 88.265) (xy 63.5 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b27375d-6070-416d-938a-70e39e167a8a")
+	)
+	(wire
+		(pts
+			(xy 57.15 119.38) (xy 73.025 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b90b1c9-97ff-4df8-ab75-1c035064985c")
+	)
+	(wire
+		(pts
 			(xy 229.235 133.35) (xy 229.235 148.59)
 		)
 		(stroke
@@ -4489,6 +4940,16 @@
 			(type default)
 		)
 		(uuid "7fbcfeb6-9fc8-49e2-ad16-86b9afd71672")
+	)
+	(wire
+		(pts
+			(xy 57.785 85.725) (xy 95.885 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83f2a2bf-550d-43d5-b1ee-d11639982f88")
 	)
 	(wire
 		(pts
@@ -4569,6 +5030,16 @@
 			(type default)
 		)
 		(uuid "8d7dbbab-87de-4dcf-9366-a64cbba8e31b")
+	)
+	(wire
+		(pts
+			(xy 57.15 114.3) (xy 63.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e88a161-ddb6-4acc-84df-f4012fba0674")
 	)
 	(wire
 		(pts
@@ -4722,6 +5193,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 99.695) (xy 63.5 99.695)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9efacfbd-e164-4ee5-9017-4dc2d2e8eab6")
+	)
+	(wire
+		(pts
 			(xy 318.135 212.725) (xy 330.835 212.725)
 		)
 		(stroke
@@ -4869,6 +5350,16 @@
 			(type default)
 		)
 		(uuid "af91b63e-15d3-4faa-ab63-27782648d212")
+	)
+	(wire
+		(pts
+			(xy 73.025 102.235) (xy 73.025 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afdea2d6-a182-49e3-b65c-df81a628b5fa")
 	)
 	(wire
 		(pts
@@ -5209,6 +5700,16 @@
 			(type default)
 		)
 		(uuid "cc10b1d0-d442-48f3-a5a8-91e9cb3772a4")
+	)
+	(wire
+		(pts
+			(xy 63.5 116.84) (xy 63.5 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce280de7-a74d-4f6d-a19e-f27b38d89a35")
 	)
 	(wire
 		(pts
@@ -5672,6 +6173,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 99.695) (xy 63.5 97.155)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50c749d-d263-4923-ace2-8a24082ee538")
+	)
+	(wire
+		(pts
 			(xy 294.005 127) (xy 294.005 139.065)
 		)
 		(stroke
@@ -5679,16 +6190,6 @@
 			(type default)
 		)
 		(uuid "f53ac0e3-c3bd-4b93-97f1-80ac973ea0e6")
-	)
-	(wire
-		(pts
-			(xy 85.725 121.285) (xy 85.725 126.365)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6a3bbc8-8d94-4753-a848-8673d94442ec")
 	)
 	(wire
 		(pts
@@ -5719,6 +6220,16 @@
 			(type default)
 		)
 		(uuid "f91676a1-3ac3-4663-a08a-15809bb952e7")
+	)
+	(wire
+		(pts
+			(xy 85.725 121.285) (xy 85.725 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e15fd8-757f-4178-be02-7ec77662d51a")
 	)
 	(wire
 		(pts
@@ -6424,7 +6935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 67.945 70.485 0)
 			(effects
 				(font
@@ -6490,7 +7001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 64.135 61.595 0)
 			(effects
 				(font
@@ -6568,7 +7079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 64.135 46.355 0)
 			(effects
 				(font
@@ -6647,7 +7158,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 330.835 230.505 0)
 			(effects
 				(font
@@ -6794,7 +7305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 305.435 230.505 0)
 			(effects
 				(font
@@ -6845,7 +7356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
 			(at 332.105 100.965 0)
 			(effects
 				(font
@@ -6946,7 +7457,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 343.535 208.915 0)
 			(effects
 				(font
@@ -7016,7 +7527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 330.835 208.915 0)
 			(effects
 				(font
@@ -7163,7 +7674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 171.45 177.8 0)
 			(effects
 				(font
@@ -7239,7 +7750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 69.85 177.8 0)
 			(effects
 				(font
@@ -7391,7 +7902,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 57.15 160.02 0)
 			(effects
 				(font
@@ -7468,7 +7979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 85.725 126.365 0)
 			(effects
 				(font
@@ -7533,7 +8044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 142.875 123.19 0)
 			(effects
 				(font
@@ -7600,7 +8111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 120.65 207.01 0)
 			(effects
 				(font
@@ -7657,7 +8168,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
 			(at 259.08 73.66 0)
 			(effects
 				(font
@@ -7758,7 +8269,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 184.15 177.8 0)
 			(effects
 				(font
@@ -7835,7 +8346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 272.415 138.43 0)
 			(effects
 				(font
@@ -7905,7 +8416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 222.25 177.8 0)
 			(effects
 				(font
@@ -7982,7 +8493,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 203.2 125.73 0)
 			(effects
 				(font
@@ -8052,7 +8563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 343.535 230.505 0)
 			(effects
 				(font
@@ -8122,7 +8633,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 196.85 177.8 0)
 			(effects
 				(font
@@ -8274,7 +8785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 209.55 177.8 0)
 			(effects
 				(font
@@ -8331,7 +8842,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
 			(at 288.29 100.33 0)
 			(effects
 				(font
@@ -8509,7 +9020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 356.235 208.915 0)
 			(effects
 				(font
@@ -8577,7 +9088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 142.875 69.85 0)
 			(effects
 				(font
@@ -8644,7 +9155,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 158.75 177.8 0)
 			(effects
 				(font
@@ -8720,7 +9231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 95.25 207.01 0)
 			(effects
 				(font
@@ -8794,7 +9305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 260.35 185.42 0)
 			(effects
 				(font
@@ -8861,7 +9372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 133.35 207.01 0)
 			(effects
 				(font
@@ -8938,7 +9449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 190.5 140.97 0)
 			(effects
 				(font
@@ -9006,7 +9517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 229.235 151.13 0)
 			(effects
 				(font
@@ -9073,7 +9584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 120.65 177.8 0)
 			(effects
 				(font
@@ -9150,7 +9661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 177.8 125.73 0)
 			(effects
 				(font
@@ -9220,7 +9731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 234.95 177.8 0)
 			(effects
 				(font
@@ -9296,7 +9807,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 82.55 177.8 0)
 			(effects
 				(font
@@ -9449,7 +9960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 305.435 208.915 0)
 			(effects
 				(font
@@ -9519,7 +10030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 107.95 207.01 0)
 			(effects
 				(font
@@ -9595,7 +10106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 260.35 177.8 0)
 			(effects
 				(font
@@ -9746,7 +10257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 311.15 182.88 0)
 			(effects
 				(font
@@ -9794,7 +10305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
 			(at 302.895 73.66 0)
 			(effects
 				(font
@@ -9893,7 +10404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 69.85 170.18 0)
 			(effects
 				(font
@@ -9958,7 +10469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 305.435 212.725 0)
 			(effects
 				(font
@@ -10025,7 +10536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 107.95 177.8 0)
 			(effects
 				(font
@@ -10050,6 +10561,71 @@
 			(project ""
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b75c9b3c-100b-419c-8a92-a05de0392108")
+		(property "Reference" "#PWR08"
+			(at 63.5 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.627 127.5842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc07119d-515d-4838-b7ea-b754c0db84a1")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -10101,7 +10677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 318.135 230.505 0)
 			(effects
 				(font
@@ -10171,7 +10747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 69.85 207.01 0)
 			(effects
 				(font
@@ -10245,7 +10821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 304.8 107.315 0)
 			(effects
 				(font
@@ -10261,6 +10837,76 @@
 			(project "musec_pico"
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:PJ313")
+		(at 48.26 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3c9d01f-4d7d-45b8-a9ae-289b939920dc")
+		(property "Reference" "J3"
+			(at 41.91 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ313"
+			(at 51.435 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "musec_pico:PJ313"
+			(at 48.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.5mm PJ313"
+			(at 47.752 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "561f2d4b-7bde-42df-aba1-566187b857fb")
+		)
+		(pin "2"
+			(uuid "2c1cfea9-a0aa-4c3e-bac0-1a23655cbdf9")
+		)
+		(pin "1"
+			(uuid "ab9b3eff-f493-4374-afdd-42ae7aee52c1")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -10293,7 +10939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering"
 			(at 344.805 73.66 0)
 			(effects
 				(font
@@ -10392,7 +11038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 305.435 226.695 0)
 			(effects
 				(font
@@ -10536,7 +11182,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 216.535 140.97 0)
 			(effects
 				(font
@@ -10803,7 +11449,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 355.6 182.88 0)
 			(effects
 				(font
@@ -10868,7 +11514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 305.435 234.315 0)
 			(effects
 				(font
@@ -10933,7 +11579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 133.35 214.63 0)
 			(effects
 				(font
@@ -11000,7 +11646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 82.55 207.01 0)
 			(effects
 				(font
@@ -11074,7 +11720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 139.7 88.265 0)
 			(effects
 				(font
@@ -11142,7 +11788,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 259.08 138.43 0)
 			(effects
 				(font
@@ -11212,7 +11858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 356.235 230.505 0)
 			(effects
 				(font
@@ -11231,6 +11877,75 @@
 			(project "musec_pico"
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 52.705 85.725 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e622fe84-268e-464c-9b9b-6d1728293224")
+		(property "Reference" "J1"
+			(at 52.705 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 52.705 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pico:Solder_2P"
+			(at 52.705 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.705 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 52.705 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6288e12e-f9a9-447d-8602-71a872a842b1")
+		)
+		(pin "1"
+			(uuid "6ccaf017-ac1d-42c4-a61d-587b6b26f40a")
+		)
+		(instances
+			(project ""
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -11359,7 +12074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 247.65 177.8 0)
 			(effects
 				(font
@@ -11436,7 +12151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol"
 			(at 229.235 125.73 0)
 			(effects
 				(font
@@ -11506,7 +12221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 133.35 177.8 0)
 			(effects
 				(font
@@ -11531,6 +12246,76 @@
 			(project ""
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:PJ313")
+		(at 48.26 99.695 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f431bb22-3239-4d4c-bdd8-9209df81e000")
+		(property "Reference" "J2"
+			(at 41.91 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PJ313"
+			(at 51.435 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "musec_pico:PJ313"
+			(at 48.26 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.5mm PJ313"
+			(at 47.752 104.775 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "c5398e1d-d4b1-40f6-aebc-de12fdde59c0")
+		)
+		(pin "2"
+			(uuid "7762b7a2-1b1a-4d21-98c1-2584cb53a6ba")
+		)
+		(pin "1"
+			(uuid "78b88d88-ecd7-47a1-a257-a1ff322263c0")
+		)
+		(instances
+			(project ""
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -11582,7 +12367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 318.135 208.915 0)
 			(effects
 				(font
@@ -11652,7 +12437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 95.25 177.8 0)
 			(effects
 				(font
@@ -11805,7 +12590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 146.05 177.8 0)
 			(effects
 				(font
