@@ -39,9 +39,7 @@ static void disp_pedal()
 {
     printf("[Pedal]\n");
     printf("  Internal: %s.\n", musec_cfg->pedal.internal ? "ON" : "OFF");
-    printf("  External: %s, %s.\n",
-            musec_cfg->pedal.external ? "ON" : "OFF",
-            musec_cfg->pedal.invert_ext ? "Inverted" : "Normal");
+    printf("  External: %s.\n", musec_cfg->pedal.external ? "ON" : "OFF");
 }
 
 void handle_display(int argc, char *argv[])
@@ -173,14 +171,13 @@ static void handle_spin(int argc, char *argv[])
 
 static void handle_pedal(int argc, char *argv[])
 {
-    const char *usage = "Usage: pedal <internal|external> <on|off>\n"
-                        "       pedal invert <on|off> (only for external)\n";
+    const char *usage = "Usage: pedal <internal|external> <on|off>\n";
     if (argc != 2) {
         printf(usage);
         return;
     }
 
-    const char *target_choices[] = {"internal", "external", "invert"};
+    const char *target_choices[] = {"internal", "external"};
     const char *onoff_choices[] = {"off", "on"};
     int target = cli_match_prefix(target_choices, count_of(target_choices), argv[0]);
     int onoff = cli_match_prefix(onoff_choices, 2, argv[1]);
@@ -193,8 +190,6 @@ static void handle_pedal(int argc, char *argv[])
         musec_cfg->pedal.internal = onoff;
     } else if (target == 1) {
         musec_cfg->pedal.external = onoff;
-    } else {
-        musec_cfg->pedal.invert_ext = onoff;
     }
 
     config_changed();

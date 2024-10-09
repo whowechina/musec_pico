@@ -22,7 +22,6 @@ typedef struct __attribute__((packed)) {
     struct {
         bool internal;
         bool external;
-        bool invert_ext;
     } pedal;
     struct {
         rgb_hsv_t colors[12];
@@ -34,6 +33,7 @@ typedef struct __attribute__((packed)) {
 typedef struct {
     uint16_t fps[2];
     bool key_stuck;
+    bool ext_pedal_invert;
 } musec_runtime_t;
 
 extern musec_cfg_t *musec_cfg;

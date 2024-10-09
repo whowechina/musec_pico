@@ -50,9 +50,14 @@ static void run_lights()
     light_set_aux((button & 0x40) ? WHITE : rgb32(180, 180, 10, false), false);
 
     uint32_t color = rgb32_from_hsv(phase + 175, 255, 128);
-    light_set_pedal(0, (button & 0x180) ? WHITE : color, false);
-    light_set_pedal(1, (button & 0x180) ? WHITE : color, false);
-    light_set_pedal(2, (button & 0x180) ? WHITE : color, false);
+
+    bool int_pedal = button & 0x80;
+    bool ext_pedal = button & 0x100;
+    bool pedal = int_pedal || (ext_pedal ^ musec_runtime.ext_pedal_invert);
+
+    light_set_pedal(0, pedal ? WHITE : color, false);
+    light_set_pedal(1, pedal ? WHITE : color, false);
+    light_set_pedal(2, pedal ? WHITE : color, false);
 }
 
 static mutex_t core1_io_lock;
@@ -77,9 +82,11 @@ struct __attribute__((packed)) {
 static void hid_update()
 {
     uint16_t buttons = button_read();
-    buttons |= (buttons & 0x100) >> 1;
-    buttons &= 0xff;
-    hid_report.buttons = buttons;
+    bool ext_pedal = buttons & 0x100;
+    if (ext_pedal ^ musec_runtime.ext_pedal_invert) {
+        buttons |= 0x80; // combine internal and external pedal
+    }
+    hid_report.buttons = buttons & 0xff;
     for (int i = 0; i < 5; i++) {
         hid_report.joy[i] = spin_units(i);
     }
@@ -131,6 +138,12 @@ static void update_check()
     }
 }
 
+static void detect_pedal_polarity()
+{
+    uint16_t buttons = button_read();
+    musec_runtime.ext_pedal_invert = buttons & 0x100;
+}
+
 void init()
 {
     sleep_ms(50);
@@ -148,6 +161,8 @@ void init()
     light_init();
     button_init();
     spin_init();
+
+    detect_pedal_polarity();
 
     cli_init("musec_pico>", "\n   << Musec Pico Controller >>\n"
                             " https://github.com/whowechina\n\n");

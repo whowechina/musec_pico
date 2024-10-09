@@ -21,7 +21,6 @@ static musec_cfg_t default_cfg = {
     .pedal = {
         .internal = true,
         .external = true,
-        .invert_ext = false,
     },
 };
 
