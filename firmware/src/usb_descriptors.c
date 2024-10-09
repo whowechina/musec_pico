@@ -143,6 +143,15 @@ static const char *string_desc_arr[] = {
     "Title R",
     "Title G",
     "Title B",
+    "Pedal 1 R",
+    "Pedal 1 G",
+    "Pedal 1 B",
+    "Pedal 2 R",
+    "Pedal 2 G",
+    "Pedal 2 B",
+    "Pedal 3 R",
+    "Pedal 3 G",
+    "Pedal 3 B",
 };
 
 // Invoked when received GET STRING DESCRIPTOR request

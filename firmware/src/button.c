@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "hardware/gpio.h"
+#include "hardware/gpio.h" 
 #include "hardware/timer.h"
 #include "hardware/pwm.h"
 
@@ -61,7 +61,11 @@ void button_update()
         }
 
         buttons <<= 1;
-        if (sw_val[i]) {
+        if (i == 8) {
+            if (sw_val[i] ^ musec_cfg->pedal.invert_ext) {
+                buttons |= 1;
+            }
+        } else if (sw_val[i]) {
             buttons |= 1;
         }
     }

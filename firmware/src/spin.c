@@ -54,6 +54,14 @@ uint8_t spin_num()
     return SPIN_NUM;
 }
 
+bool spin_present(uint8_t index)
+{
+    if (index >= SPIN_NUM) {
+        return false;
+    }
+    return tmag5273_is_present(index);
+}
+
 static uint16_t spin_reading[SPIN_NUM];
 
 void spin_update()

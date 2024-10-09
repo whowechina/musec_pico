@@ -21,6 +21,7 @@ static struct {
     i2c_inst_t *port;
     uint8_t addr;
     uint16_t cache;
+    bool present;
 } instances[16] = { { i2c0, TMAG5273_DEF_ADDR } };
 #define INSTANCE_NUM count_of(instances)
 
@@ -61,7 +62,7 @@ void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port)
         current_instance = instance;
         INSTANCE.port = i2c_port;
         INSTANCE.addr = TMAG5273_DEF_ADDR;
-        tmag5273_change_addr(TMAG5273_DEF_ADDR + 1 + instance);
+        INSTANCE.present = tmag5273_change_addr(TMAG5273_DEF_ADDR + 1 + instance);
     }
 }
 
@@ -72,15 +73,19 @@ void tmag5273_use(unsigned instance)
     }
 }
 
-bool tmag5273_is_present()
+bool tmag5273_is_present(unsigned instance)
 {
-    return false;
+    if (instance >= INSTANCE_NUM) {
+        return false;
+    }
+    return instances[instance].present;
 }
 
 bool tmag5273_change_addr(uint8_t i2c_addr)
 {
     tmag5273_write_reg(0x0c, (i2c_addr << 1) | 0x01);
     INSTANCE.addr = i2c_addr;
+    tmag5273_read_reg(0x0c); // Dummy read
     uint8_t new_addr = tmag5273_read_reg(0x0c) >> 1;
     return new_addr == i2c_addr;
 }

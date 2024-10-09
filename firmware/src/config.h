@@ -17,20 +17,18 @@ typedef struct {
 typedef struct __attribute__((packed)) {
     struct {
         uint8_t units_per_turn;
+        uint8_t reversed[5];
     } spin;
+    struct {
+        bool internal;
+        bool external;
+        bool invert_ext;
+    } pedal;
     struct {
         rgb_hsv_t colors[12];
         uint8_t level;
         uint8_t reserved[15];
     } light;
-    struct {
-        uint8_t joy : 4;
-        uint8_t nkro : 4;
-    } hid;
-    struct {
-        uint8_t mode : 4;
-        uint8_t virtual_aic : 4;
-    } aime;
 } musec_cfg_t;
 
 typedef struct {

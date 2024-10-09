@@ -22,7 +22,8 @@
 
 #define HID_TIMEOUT 10*1000*1000
 
-static uint32_t buf_rgb[22]; // button 4 * 5 + aux * 2
+static uint32_t buf_main[22]; // button 4 * 5 + aux * 2
+static uint32_t buf_pedal[3]; // pedal * 3
 
 static inline uint32_t _rgb32(uint32_t c1, uint32_t c2, uint32_t c3, bool gamma_fix)
 {
@@ -86,8 +87,13 @@ uint32_t load_color(const rgb_hsv_t *color)
 
 static void drive_led()
 {
-    for (int i = 0; i < count_of(buf_rgb); i++) { \
-        pio_sm_put_blocking(pio0, 0, buf_rgb[i] << 8u); \
+    for (int i = 0; i < count_of(buf_main); i++) {
+        pio_sm_put_blocking(pio0, 0, buf_main[i] << 8u);
+    }
+
+    for (int i = 0; i < count_of(buf_pedal); i++) {
+        pio_sm_put_blocking(pio0, 1, buf_pedal[i] << 8u);
+        pio_sm_put_blocking(pio0, 1, buf_pedal[i] << 8u);
     }
 }
 
@@ -107,7 +113,8 @@ static inline uint32_t apply_level(uint32_t color)
 void light_init()
 {
     uint offset = pio_add_program(pio0, &ws2812_program);
-    ws2812_program_init(pio0, 0, offset, RGB_PIN, 800000, false);
+    ws2812_program_init(pio0, 0, offset, RGB_PIN_MAIN, 800000, false);
+    ws2812_program_init(pio0, 1, offset, RGB_PIN_PEDAL, 800000, false);
 }
 
 void light_update()
@@ -125,10 +132,10 @@ void light_update()
 
 void light_set(uint8_t index, uint32_t color)
 {
-    if (index >= count_of(buf_rgb)) {
+    if (index >= count_of(buf_main)) {
         return;
     }
-    buf_rgb[index] = apply_level(color);
+    buf_main[index] = apply_level(color);
 }
 
 static bool bypass_check(bool hid)
@@ -144,9 +151,13 @@ static bool bypass_check(bool hid)
     return now < hid_timeout;
 }
 
-void light_set_main(uint8_t index, uint32_t color, bool hid)
+void light_set_spinner(uint8_t index, uint32_t color, bool hid)
 {
     if (bypass_check(hid)) {
+        return;
+    }
+
+    if (index >= 5) {
         return;
     }
 
@@ -169,4 +180,15 @@ void light_set_aux(uint32_t color, bool hid)
         return;
     }
     light_set(21, color);
+}
+
+void light_set_pedal(uint8_t index, uint32_t color, bool hid)
+{
+    if (bypass_check(hid)) {
+        return;
+    }
+    if (index >= count_of(buf_pedal)) {
+        return;
+    }
+    buf_pedal[index] = apply_level(color);
 }

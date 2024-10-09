@@ -15,9 +15,13 @@ static musec_cfg_t default_cfg = {
     .spin = {
         .units_per_turn = 80,
     },
-    .hid = {
-        .joy = 1,
-        .nkro = 0,
+    .light = {
+        .level = 128,
+    },
+    .pedal = {
+        .internal = true,
+        .external = true,
+        .invert_ext = false,
     },
 };
 

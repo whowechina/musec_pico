@@ -32,20 +32,27 @@
 #include "button.h"
 #include "spin.h"
 
+#define WHITE 0xffffff
+
 static void run_lights()
 {
     uint32_t phase = time_us_32() >> 16;
     uint16_t button = button_read();
     for (int i = 0; i < 5; i++) {
-        uint32_t color = rgb32_from_hsv(phase + i * 35, 255, 255);
+        uint32_t color = rgb32_from_hsv(phase + i * 35, 255, 128);
         if (button & (1 << i)) {
-            color = rgb32(255, 255, 255, false);
+            color = WHITE;
         }
-        light_set_main(i, color, false);
+        light_set_spinner(i, color, false);
     }
 
-    light_set_start((button & 0x20) ? 0xffffff : rgb32(255, 10, 10, false), false);
-    light_set_aux((button & 0x40) ? 0xffffff : rgb32(180, 180, 10, false), false);
+    light_set_start((button & 0x20) ? WHITE : rgb32(255, 10, 10, false), false);
+    light_set_aux((button & 0x40) ? WHITE : rgb32(180, 180, 10, false), false);
+
+    uint32_t color = rgb32_from_hsv(phase + 175, 255, 128);
+    light_set_pedal(0, (button & 0x180) ? WHITE : color, false);
+    light_set_pedal(1, (button & 0x180) ? WHITE : color, false);
+    light_set_pedal(2, (button & 0x180) ? WHITE : color, false);
 }
 
 static mutex_t core1_io_lock;
@@ -171,13 +178,23 @@ void tud_hid_set_report_cb(uint8_t itf, uint8_t report_id,
                            hid_report_type_t report_type, uint8_t const *buffer,
                            uint16_t bufsize)
 {
-    if ((report_id == REPORT_ID_LIGHTS) && (bufsize >= 18)) {
+    if ((report_id == REPORT_ID_LIGHTS) && (bufsize >= 27)) {
         printf("Set from USB %d-%d: %d\n", report_id, report_type, bufsize);
         for (int i = 0; i < 5; i++) {
             uint32_t color = rgb32(buffer[i * 3], buffer[i * 3 + 1], buffer[i * 3 + 2], false);
-            light_set_main(i, color, true);
+            light_set_spinner(i, color, true);
         }
-        light_set_start(rgb32(buffer[15], buffer[16], buffer[17], false), true);
-        light_set_aux(rgb32(buffer[15], buffer[16], buffer[17], false), true);
+
+        const uint8_t *title = buffer + 15;
+        const uint8_t *pedal = buffer + 18;
+
+        uint32_t title_color = rgb32(title[0], title[1], title[2], false);
+        light_set_start(title_color, true);
+        light_set_aux(title_color, true);
+    
+        for (int i = 0; i < 3; i++) {
+            uint32_t color = rgb32(pedal[i * 3], pedal[i * 3 + 1], pedal[i * 3 + 2], false);
+            light_set_pedal(i, color, true);
+        }
     }
 }
