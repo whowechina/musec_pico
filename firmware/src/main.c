@@ -77,6 +77,8 @@ struct __attribute__((packed)) {
 static void hid_update()
 {
     uint16_t buttons = button_read();
+    buttons |= (buttons & 0x100) >> 1;
+    buttons &= 0xff;
     hid_report.buttons = buttons;
     for (int i = 0; i < 5; i++) {
         hid_report.joy[i] = spin_units(i);
