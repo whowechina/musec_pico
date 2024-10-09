@@ -1,0 +1,5 @@
+*-backups
+*.lck
+*.bak
+.vscode/
+Production/PCB/*/
