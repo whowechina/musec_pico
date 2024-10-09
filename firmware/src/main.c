@@ -179,7 +179,6 @@ void tud_hid_set_report_cb(uint8_t itf, uint8_t report_id,
                            uint16_t bufsize)
 {
     if ((report_id == REPORT_ID_LIGHTS) && (bufsize >= 27)) {
-        printf("Set from USB %d-%d: %d\n", report_id, report_type, bufsize);
         for (int i = 0; i < 5; i++) {
             uint32_t color = rgb32(buffer[i * 3], buffer[i * 3 + 1], buffer[i * 3 + 2], false);
             light_set_spinner(i, color, true);
