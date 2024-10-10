@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "musec_pedal")(type "KiCad")(uri "${KIPRJMOD}/musec_pedal.pretty")(options "")(descr ""))
+)

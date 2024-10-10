@@ -1,0 +1,2438 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "2e3f5573-c264-4a8b-a2f0-0e6473d39aad")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x04"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "musec_pico:WS2812B_Unified"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D10"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WS2812B_Unified"
+				(at 15.24 1.7907 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "musec_pico:WS2812B-2835"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_Unified_0_0"
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 2.54 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Vdd"
+					(at 0 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "Vss"
+					(at 0 -3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_Unified_0_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 3.81 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.635) (xy -1.905 0) (xy -2.54 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "WS2812B_Unified_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "I"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "Out"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "O"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 290.83 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00d46313-bcf3-4ca5-baf7-e1e5d179b357")
+	)
+	(junction
+		(at 220.98 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ff41c96-440c-422f-b46d-9dab5cfff90d")
+	)
+	(junction
+		(at 220.98 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a48b5e0-e2ef-48e7-b202-5c4414a7a970")
+	)
+	(junction
+		(at 278.13 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e2b33df-8502-4370-ad6a-ef4ef517dbfe")
+	)
+	(junction
+		(at 233.68 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "312043af-813d-4708-b7a6-7f7cae610f62")
+	)
+	(junction
+		(at 208.28 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b67b0b7-33f8-4b70-a6a4-4bf2f382ea75")
+	)
+	(junction
+		(at 158.75 126.365)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a901f82-a5d1-4f5e-bc96-ae04237802ab")
+	)
+	(junction
+		(at 195.58 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "641c821c-be29-4d71-8d8d-6ee6c9fc6e30")
+	)
+	(junction
+		(at 195.58 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f33cceb-c636-4a09-b346-0d71fe6cd895")
+	)
+	(junction
+		(at 278.13 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8722640e-5fae-4ed7-9dfe-59b017468e06")
+	)
+	(junction
+		(at 208.28 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b2c1f1a-8219-4a3b-a585-bf8d7c5fc3a0")
+	)
+	(junction
+		(at 290.83 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9a41b8c-fb1c-4f19-98f9-3d57cbece1bc")
+	)
+	(junction
+		(at 182.88 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc4dd972-e068-4604-8b7f-164c1316deb4")
+	)
+	(junction
+		(at 158.75 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfec2c03-c2bf-4b61-8608-06dfb910d9e2")
+	)
+	(junction
+		(at 233.68 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d41f1155-94f5-4921-9052-8e1a9566f358")
+	)
+	(junction
+		(at 182.88 111.125)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb71beef-234b-4a04-98f8-8eded5fb246c")
+	)
+	(no_connect
+		(at 148.59 41.275)
+		(uuid "5ffb3571-20cd-477e-9964-de2b03d7012a")
+	)
+	(no_connect
+		(at 252.73 118.745)
+		(uuid "bb676a16-a560-49c0-a7ae-4ee3f36decf5")
+	)
+	(wire
+		(pts
+			(xy 246.38 130.81) (xy 246.38 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eda0b82-3289-4786-b672-a42dccc4a6b7")
+	)
+	(wire
+		(pts
+			(xy 208.28 130.81) (xy 220.98 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dd85448-b7d6-4bf8-9309-b524dc8df2c1")
+	)
+	(wire
+		(pts
+			(xy 233.68 111.125) (xy 246.38 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22022e94-7675-4430-b592-1c78c7ed7c02")
+	)
+	(wire
+		(pts
+			(xy 278.13 123.19) (xy 290.83 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2361ecaf-e2df-4990-be03-3a2a353fed7d")
+	)
+	(wire
+		(pts
+			(xy 182.88 111.125) (xy 195.58 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26382f51-7e6f-4738-9731-ae5372eb0ddd")
+	)
+	(wire
+		(pts
+			(xy 195.58 130.81) (xy 195.58 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27280215-715e-459f-8d53-5af354398e66")
+	)
+	(wire
+		(pts
+			(xy 153.67 121.285) (xy 162.56 121.285)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a259c5f-ff7b-4b6f-85bc-bb0cbeec5bca")
+	)
+	(wire
+		(pts
+			(xy 158.75 130.81) (xy 182.88 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f4ef095-7257-414b-ba86-1f065670a51f")
+	)
+	(wire
+		(pts
+			(xy 233.68 130.81) (xy 233.68 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6456ca01-14fb-4bf7-9f20-1d4ec7a88d2b")
+	)
+	(wire
+		(pts
+			(xy 290.83 115.57) (xy 303.53 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6971d69d-8ad6-4fdb-8bfe-8ee678b5e123")
+	)
+	(wire
+		(pts
+			(xy 182.88 130.81) (xy 195.58 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7314df31-fad1-4d66-bf92-9be916327056")
+	)
+	(wire
+		(pts
+			(xy 220.98 130.81) (xy 220.98 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "774e8375-cd98-45f8-b98f-f3e7382f05d6")
+	)
+	(wire
+		(pts
+			(xy 278.13 115.57) (xy 290.83 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "792e166e-1541-46b7-9a52-10661726494b")
+	)
+	(wire
+		(pts
+			(xy 153.67 123.825) (xy 158.75 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b27375d-6070-416d-938a-70e39e167a8a")
+	)
+	(wire
+		(pts
+			(xy 158.75 130.81) (xy 158.75 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f597bd4-914a-4731-bf75-e5763df289a6")
+	)
+	(wire
+		(pts
+			(xy 158.75 116.205) (xy 158.75 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "998de38a-1e0a-43c3-afe8-04403b8be258")
+	)
+	(wire
+		(pts
+			(xy 233.68 130.81) (xy 246.38 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9acfa527-e99a-44ba-9526-6621ca6389f5")
+	)
+	(wire
+		(pts
+			(xy 153.67 118.745) (xy 176.53 118.745)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9af32cbc-b3b1-4d02-863c-25633a34cf13")
+	)
+	(wire
+		(pts
+			(xy 158.75 116.205) (xy 153.67 116.205)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89db55b-b9de-43b1-b27b-143eeee79ef7")
+	)
+	(wire
+		(pts
+			(xy 158.75 126.365) (xy 158.75 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee58d10-7e4d-42ae-bbc9-ff96854f1036")
+	)
+	(wire
+		(pts
+			(xy 220.98 111.125) (xy 233.68 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af3b706a-b2a1-4d1f-8a53-92b85536fd7e")
+	)
+	(wire
+		(pts
+			(xy 195.58 130.81) (xy 208.28 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b145287e-eeac-4319-920c-d8d17a483bde")
+	)
+	(wire
+		(pts
+			(xy 208.28 111.125) (xy 220.98 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b56cf79f-15d7-4d90-9637-a211cd4ce394")
+	)
+	(wire
+		(pts
+			(xy 158.75 126.365) (xy 162.56 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbdb9ead-df12-45dd-bee5-a6974b04f2ac")
+	)
+	(wire
+		(pts
+			(xy 158.75 111.125) (xy 182.88 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7bc620-b294-4846-9185-936ee708c2d8")
+	)
+	(wire
+		(pts
+			(xy 290.83 123.19) (xy 303.53 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cba0b790-87fd-403e-a984-d3df90d5b2fb")
+	)
+	(wire
+		(pts
+			(xy 158.75 123.825) (xy 158.75 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d089e414-c028-4ce1-b488-de408dea3f64")
+	)
+	(wire
+		(pts
+			(xy 208.28 130.81) (xy 208.28 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df99a850-e42e-45ce-8edd-34d3d4b125e0")
+	)
+	(wire
+		(pts
+			(xy 195.58 111.125) (xy 208.28 111.125)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e329e283-812b-4e52-ab8a-0f3e3a1efef3")
+	)
+	(wire
+		(pts
+			(xy 220.98 130.81) (xy 233.68 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5b2b3df-a26b-41bd-b7f1-2e717386b753")
+	)
+	(wire
+		(pts
+			(xy 182.88 130.81) (xy 182.88 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d75bfb-1513-4adb-aa4b-0959eb075201")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 303.53 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "008dc9be-7156-45d4-8aa0-87ab55399ab8")
+		(property "Reference" "C3"
+			(at 306.705 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 306.705 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 304.4952 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 303.53 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 303.53 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a919a5f3-3e85-47e8-99d5-b2874afa509b")
+		)
+		(pin "2"
+			(uuid "223aa74a-d0de-41fd-8183-1e6337fe9b18")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 246.38 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0161edd7-8c07-415e-b76b-87d7ffd77032")
+		(property "Reference" "D6"
+			(at 252.73 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 261.62 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 247.65 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 246.38 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "2686218c-103a-49dd-844f-46c981a16625")
+		)
+		(pin "I"
+			(uuid "d81e567c-3486-43dc-bf43-1706f238bf76")
+		)
+		(pin "O"
+			(uuid "4e079ee7-9686-4862-82c1-c353af68ea43")
+		)
+		(pin "V"
+			(uuid "4279f6a9-65b3-407f-ad0e-33ca933ee8fe")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 167.64 121.285 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09d673a5-2154-47d0-a75a-1ae6886e29ac")
+		(property "Reference" "J2"
+			(at 170.18 120.0149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW1"
+			(at 170.18 122.5549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:Solder_1P"
+			(at 167.64 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 167.64 121.285 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9a5adf9-ebeb-4e1a-8202-416927db35d4")
+		)
+		(instances
+			(project ""
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 278.13 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09f4e675-0bbf-4f20-bab5-788115abed2a")
+		(property "Reference" "C1"
+			(at 281.305 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 281.305 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 279.0952 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 278.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 278.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef5af7d2-2088-4564-8cf4-2aa2b2584c90")
+		)
+		(pin "2"
+			(uuid "01b07cec-ce86-44b1-99d9-902a90116b09")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 208.28 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f2eeb69-0452-47db-a35e-993131b854d4")
+		(property "Reference" "D3"
+			(at 214.63 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 223.52 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 209.55 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 208.28 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "07bbe0b6-1955-46b5-b2eb-092461db20f4")
+		)
+		(pin "I"
+			(uuid "599306d6-a642-4132-939f-3bd08d3a1d80")
+		)
+		(pin "O"
+			(uuid "c4486c39-88cd-4410-800d-88a2dc65c7e5")
+		)
+		(pin "V"
+			(uuid "8f912cd8-88c8-47ed-9a78-93ec1930654b")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 220.98 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "438784a6-410d-4897-9651-7b6557959d9a")
+		(property "Reference" "D4"
+			(at 227.33 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 236.22 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 222.25 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 220.98 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "2d649638-2d24-4232-8b49-4e3560207522")
+		)
+		(pin "I"
+			(uuid "cefd8c2d-4f19-4f5c-a1c6-00b37643b595")
+		)
+		(pin "O"
+			(uuid "7309f95e-a36d-42a7-b13c-37085cf7654d")
+		)
+		(pin "V"
+			(uuid "b445d2d4-2f7b-4030-b6c9-8a601a9ed88b")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 182.88 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44bc94b8-feec-4344-8546-38a9105da0f3")
+		(property "Reference" "D1"
+			(at 189.23 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 198.12 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 184.15 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 182.88 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "e3d8f1b1-f412-4084-b8d3-c67ca4f2e298")
+		)
+		(pin "I"
+			(uuid "2b2fa00f-eec0-43d7-a87f-da650405e1b2")
+		)
+		(pin "O"
+			(uuid "13807bfb-714f-45b2-88d9-7310590e060a")
+		)
+		(pin "V"
+			(uuid "ca40d8f7-3c4b-479d-800b-f78a78427a7e")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 167.64 126.365 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "592f3576-4eff-48a3-8a46-dd33e984c6ae")
+		(property "Reference" "J3"
+			(at 170.18 125.0949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SW2"
+			(at 170.18 127.6349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:Solder_1P"
+			(at 167.64 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 167.64 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19c664da-009b-4c0f-8a93-26f6a28a05fe")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 148.59 118.745 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "687292cd-6268-47ef-b25d-119c84937b5c")
+		(property "Reference" "J1"
+			(at 145.415 120.015 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Pedal"
+			(at 145.415 121.2849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:SH1.0_4P_Solder_Combo"
+			(at 148.59 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 148.59 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d61e92d5-6038-40ce-9f30-407aff7dc7d3")
+		)
+		(pin "4"
+			(uuid "a55c7590-dbea-43d8-bb57-24709f6601a1")
+		)
+		(pin "1"
+			(uuid "94bc23d2-0bc0-446b-9a5d-279caa9899de")
+		)
+		(pin "3"
+			(uuid "7ba1bb1a-c058-4b3c-94a5-a93b23526e6b")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 182.88 111.125 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "984abb6b-6610-4c7f-9687-901b04e500c8")
+		(property "Reference" "#PWR01"
+			(at 182.88 114.935 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 179.705 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 182.88 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f4fd395-9a5c-4772-b510-d7866c0289a5")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 233.68 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ba67f519-7f0d-41ee-840e-09c2e1f6def5")
+		(property "Reference" "D5"
+			(at 240.03 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 248.92 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 234.95 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 233.68 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "72de549a-bfe0-45d6-bfa8-08e0f7b46dd4")
+		)
+		(pin "I"
+			(uuid "1a19a928-e415-46eb-a6ce-cb6141a407d5")
+		)
+		(pin "O"
+			(uuid "ad44c5bd-5756-4c13-929c-8fdaef5b40ab")
+		)
+		(pin "V"
+			(uuid "bac68e4b-b827-4bc2-9500-fd602188241b")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 290.83 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bce60602-ece2-447d-ba0b-ca9e047b5580")
+		(property "Reference" "C2"
+			(at 294.005 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 294.005 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 291.7952 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 290.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 290.83 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84c102db-8e27-43aa-b8ee-6618a66f862a")
+		)
+		(pin "2"
+			(uuid "42ec6e17-3d44-4d01-bd11-9c08fdbbeb65")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 278.13 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd883dcb-b31f-4c58-8004-9c115721f89b")
+		(property "Reference" "#PWR07"
+			(at 278.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 274.955 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 278.13 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2702a4fa-3cab-436b-8831-9290329eed4d")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 278.13 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0f8cc17-d1cc-43d4-b6a9-20e9a6d6939a")
+		(property "Reference" "#PWR06"
+			(at 278.13 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 278.257 127.5842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 278.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 278.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 278.13 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33a58d37-e82c-4af2-91cf-5490f5cb6cbf")
+		)
+		(instances
+			(project "musec_pico"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7070382-88cb-4a39-941f-db061bcbbfe0")
+		(property "Reference" "#PWR02"
+			(at 158.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.877 136.4742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a9ea1ac-676a-4775-9295-8eccc3c6f648")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "musec_pico:WS2812B_Unified")
+		(at 195.58 118.745 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d796aa26-561b-4eec-a161-eedac17edaf2")
+		(property "Reference" "D2"
+			(at 201.93 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B_Unified"
+			(at 210.82 116.9543 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "musec_pedal:WS2812B-2835"
+			(at 196.85 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 195.58 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "G"
+			(uuid "c5bb1938-1d9d-467a-bf02-65c0cd8b8b7b")
+		)
+		(pin "I"
+			(uuid "e5cef7be-64df-48a1-940c-0b4fec8b2b0c")
+		)
+		(pin "O"
+			(uuid "9b5a7ab0-53ad-4340-ba3f-c7b9cc3a166b")
+		)
+		(pin "V"
+			(uuid "dc652b51-0e63-4675-81d4-709af8a1765e")
+		)
+		(instances
+			(project "musec_pedal"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
