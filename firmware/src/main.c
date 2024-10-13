@@ -36,9 +36,9 @@
 
 static void run_lights()
 {
-    uint32_t phase = time_us_32() >> 16;
     uint16_t button = button_read();
 
+    uint32_t phase = time_us_32() >> 16;
     for (int i = 0; i < 5; i++) {
         uint32_t color = rgb32_from_hsv(phase + i * 35, 255, 128);
         if (button & (1 << i)) {
@@ -57,16 +57,23 @@ static void run_lights()
 
     bool int_pedal = button & 0x80;
     bool ext_pedal = button & 0x100;
-
-    if (aux_down && int_pedal) {
-        musec_runtime.ext_pedal_invert = ext_pedal;
-    }
-
     bool pedal = int_pedal || (ext_pedal ^ musec_runtime.ext_pedal_invert);
 
     light_set_pedal(0, pedal ? WHITE : color, false);
     light_set_pedal(1, pedal ? WHITE : color, false);
     light_set_pedal(2, pedal ? WHITE : color, false);
+}
+
+static void runtime_setup()
+{
+    uint16_t button = button_read();
+
+    bool aux_down = button & 0x40;
+    bool int_pedal = button & 0x80;
+
+    if (aux_down && int_pedal) {
+        musec_runtime.ext_pedal_invert = button & 0x100;
+    }
 }
 
 static mutex_t core1_io_lock;
@@ -116,8 +123,8 @@ static void core0_loop()
 
         button_update();
         spin_update();
-
         hid_update();
+        runtime_setup();
 
         sleep_us(900);
     }

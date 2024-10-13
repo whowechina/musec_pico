@@ -69,6 +69,9 @@ void spin_update()
     for (int i = 0; i < SPIN_NUM; i++) {
         tmag5273_use(i);
         spin_reading[i] = tmag5273_read_angle();
+        if (musec_cfg->spin.reversed[i]) {
+            spin_reading[i] = FULL_SCALE - spin_reading[i];
+        }
     }
 }
 
