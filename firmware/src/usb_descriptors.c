@@ -123,7 +123,7 @@ static const char *string_desc_arr[] = {
     "WHowe",                     // 1: Manufacturer
     "Musec Pico",                // 2: Product
     serial_number_str,           // 3: Serials, use chip ID
-    "Musec Pico Joystick",
+    "Musec Pico",
     "Musec Pico CLI Port",
     "Spinner 1 R",
     "Spinner 1 G",
