@@ -142,22 +142,31 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 * Steps
   1. We'll start with the spinner part.  
     <img src="doc/assemble_1.jpg" width="80%">
+  
   2. Put the bearing into the bearing fixer, you'll need to bend the fixer a little bit to insert the bearing. Don't worry if the small connection part of the fixer breaks, it's fine. Then screw the bearing fixer to the lever.  
     <img src="doc/assemble_2.jpg" width="80%">
+  
   3. Screw the keycap using M2.5 screws mentioned earlier.  
     <img src="doc/assemble_3.jpg" width="80%">
+  
   4. Now insert the magnet into the slot at the center. It will be attracted to the screw head. But we still need some tape to fix it in place.  
     <img src="doc/assemble_4.jpg" width="45%"><img src="doc/assemble_5.jpg" width="45%">
+  
   5. Screw the sensor PCB to the lever and put a small piece of thin PTFE/UHMW tape on the surface. And lastly insert the shaft into the lever.  
     <img src="doc/assemble_6.jpg" width="80%">
+  
   6. Connect 5 SH1.0 cables to the main PCB. Install the main PCB and the pedal PCB to the bottom housing. Use another SH1.0 cable to connect the pedal PCB and the main PCB. The screwholes on pedal board is adjustable. Normally you need to install the pedal board a little higher.    
     <img src="doc/assemble_7.jpg" width="80%">
+  
   7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing.      
     <img src="doc/assemble_8.jpg" width="80%">
+
   8. Install the button pads using M3*8mm screws.  
     <img src="doc/assemble_9.jpg" width="80%">
+
   9. Install the top housing, you need to screw many M3 screws.  
     <img src="doc/assemble_10.jpg" width="80%">
+
   10. Put the anti-slip pads on the bottom, right on top of the screws.  
 
 ### Firmware
