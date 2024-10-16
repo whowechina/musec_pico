@@ -52,7 +52,7 @@ This Musec Pico project:
 I made this project in my personal time with no financial benefit or sponsorship. I will continue to improve the project. I have done my best to ensure that everything is accurate and functional, there's always a chance that mistakes may occur. I cannot be held responsible for any loss of your time or money that may result from using this open source project. Thank you for your understanding.
 
 ## About the License
-It's CC-NC. So DIY for yourself and for your friend, don't make money from it. And plagiarism that doesn’t even dare to mention the original author is not acceptable.
+It's CC-NC. So DIY for yourself and for your friend, don't make money from it. And plagiarism that doesn’t even dare to mention the original author is not acceptable. Plase note that pooling orders and group buying for raw materials is acceptable. Selling off any leftover components without profit is also acceptable.
 
 If you're interested in some kind of commercial use, please contact me (Discord, QQ group, Wechat group or leave your contact in issue section).
 
@@ -95,11 +95,11 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   * Move a magnetic screwdriver tip close to the TMAG5273 sensor, you'll notice the corresponding axis move in the test page. Please check all 5 sensors.
 
 ### Sensor PCB Separation
-  * If everthing works fine, you can cut off the 5 small sensor boards from the main board.  
+  * If everthing works fine, you can cut off (or even bend and snap) the 5 small sensor boards from the main board.  
     <img src="doc/pcb_cut.jpg" width="80%">
 
 ### 3D Printing
-* Printing parameters  
+#### Printing parameters  
   * PLA or PETG.
   * Layer height: 0.2mm
   * Support: Yes, always.
@@ -111,7 +111,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 
 * Keycap: `Production\3DPrint\musec_pico_keycap.stl`, white. If you have multi-color system, print the 4 triangle marks on the top in gray. 
 * Bearing Fixer: `Production\3DPrint\musec_pico_bearing_fixer.stl`, clear transparent.
-* Shaft End: `Production\3DPrint\musec_pico_shaft_end_xxx.stl`, clear transparent, choose the one matches your magnets.
+* Shaft End: `Production\3DPrint\musec_pico_shaft_end_xxx.stl`, clear transparent, choose the one matches your magnet size.
 * Lever: `Production\3DPrint\musec_pico_lever.stl`, clear transparent.
 * Pad: `Production\3DPrint\musec_pico_pad.stl`, white, gray or black (so it won't affect the LED color).
 
@@ -124,7 +124,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 * Aux Buttons: `Production\3DPrint\musec_pico_aux.stl`, clear transparent, print upside down.
 
 ### Assembly
-* Other components needed
+#### Other components needed
   * 5x **M2.5\*6mm screws** for fixing the keycap to the bearing.
   * 30x **M2\*(6-8mm) screws** for fixing the bearing and the sensor PCB to the lever.
   * 15x **M3\*8mm screws** for fixing button pads to the bottom housing.
@@ -140,7 +140,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   * Silicone anti-slip pads for the bottom.  
     <img src="doc/anti_slip_pads.jpg" width="60%">
 
-* Steps
+#### Steps
   1. We'll start with the spinner part.  
     <img src="doc/assemble_1.jpg" width="80%">
   
@@ -187,4 +187,4 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 
 ## CAD Source File
 I'm using OnShape free subscription. It's powerful but it can't archive original designs to local, so I can only share the link here. STL/DXF/DWG files are exported from this online document.  
-  https://cad.onshape.com/documents/841383e62eb719d8b384c2c8/w/8c9b3131eb80c219de824619/e/8a5d9f0dffe483e0bce3630a?renderMode=0&uiState=670e5234ff55f3754d0e6c56
+  https://cad.onshape.com/documents/841383e62eb719d8b384c2c8/w/8c9b3131eb80c219de824619/e/8a5d9f0dffe483e0bce3630a
