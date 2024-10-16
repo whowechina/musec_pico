@@ -110,7 +110,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 
 * Keycap: `Production\3DPrint\musec_pico_keycap.stl`, white. If you have multi-color system, print the 4 triangle marks on the top in gray. 
 * Bearing Fixer: `Production\3DPrint\musec_pico_bearing_fixer.stl`, clear transparent.
-* Shaft End: `Production\3DPrint\musec_pico_shaft_end.stl`, clear transparent.
+* Shaft End: `Production\3DPrint\musec_pico_shaft_end_xxx.stl`, clear transparent, choose the one matches your magnets.
 * Lever: `Production\3DPrint\musec_pico_lever.stl`, clear transparent.
 * Pad: `Production\3DPrint\musec_pico_pad.stl`, white, gray or black (so it won't affect the LED color).
 
