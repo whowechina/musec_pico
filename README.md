@@ -184,6 +184,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 ### Usage
 * It's very simple. Just plug it in and play.
 * You can set spin sensivity by "spin rate" command.
+* Firmware identifies the polarity of the external pedal on power-up. Press Aux and Internal Pedal to re-identify the polarity.
 
 ## CAD Source File
 I'm using OnShape free subscription. It's powerful but it can't archive original designs to local, so I can only share the link here. STL/DXF/DWG files are exported from this online document.  
