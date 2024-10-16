@@ -159,8 +159,11 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   6. Connect 5 SH1.0 cables to the main PCB. Install the main PCB and the pedal PCB to the bottom housing. Use another SH1.0 cable to connect the pedal PCB and the main PCB. The screwholes on pedal board is adjustable. Normally you need to install the pedal board a little higher.    
     <img src="doc/assemble_7.jpg" width="80%">
   
-  7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing.      
-    <img src="doc/assemble_8.jpg" width="80%">
+  7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing. If you have keyboard lubricant, you can apply some to the shaft and the stand.  
+    <img src="doc/assemble_lub.jpg" width="60%">  
+  Optional: a pair of plastic ring pads will be helpful to prevent the level from moving. It's 0.5mm thick, 2.1~2.5mm inner diameter, 5-10mm outer diameter.  
+    <img src="doc/assemble_limiter.jpg" width="60%">  
+  <img src="doc/assemble_8.jpg" width="80%">  
 
   8. Install the button pads using M3*8mm screws.  
     <img src="doc/assemble_9.jpg" width="80%">
