@@ -140,6 +140,8 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   * Silicone anti-slip pads for the bottom.  
     <img src="doc/anti_slip_pads.jpg" width="60%">
 
+  * Optional but good to have: A digital piano or music keyboard sustain pedal or a sewing machine pedal with 3.5mm jack. If it comes with 6.25mm jack, you also need a 6.25mm to 3.5mm adapter.
+
 #### Steps
   1. We'll start with the spinner part.  
     <img src="doc/assemble_1.jpg" width="80%">
