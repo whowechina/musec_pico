@@ -72,11 +72,11 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 * 12x JST-SH1.0 4-pin connectors (JA1 to JA5, JB1 to JB5, Pedal, J1 on pedal board).  
   https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CXMZ3J1Y?th=1
 * 6x JST-SH1.0 dual-end 4-pin cables, 50-100mm length.
-   The connector footprint on PCB also supports hand soldering. So if you can't find the connectors or the cables, you can solder the wires directly to the PCB.1
+   The connector footprint on PCB also supports hand soldering. So if you can't find the connectors or the cables, you can solder the wires directly to the PCB.  
    RC hobby sites often have SH1.0 4P silicone cables, but with only one end connector. You can solder the other end to the PCB. It's still a good choice.
 * 7x Kailh Choc v1. Choose heavy ones (70gf), I think the yellow with 70g force is the best.  
   <img src="doc/choc_v1_heavy.jpg" width="70%">
-* 1x MX Switch, I personally use Gateron POM CJ BOX.
+* 1x MX-compatible switch, I personally use Gateron POM CJ BOX.
 * 1x Plate-mounting stabilizer for the MX switch, 6.25U.
   https://www.amazon.com/GATERON-Stabilizer-Mechanical-Keyboard-Satellite/dp/B0C137DG5Q/
 
@@ -93,8 +93,9 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   * Musec Pico should be recognized as a USB HID device, here's the test page.  
     https://greggman.github.io/html5-gamepad-test/
   * Move a magnetic screwdriver tip close to the TMAG5273 sensor, you'll notice the corresponding axis move in the test page. Please check all 5 sensors.
+
 ### Sensor PCB Separation
-  * If everthing works fine. You can cut off the 5 small sensor boards from the main board.  
+  * If everthing works fine, you can cut off the 5 small sensor boards from the main board.  
     <img src="doc/pcb_cut.jpg" width="80%">
 
 ### 3D Printing
@@ -130,7 +131,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   * 16x **M3\*(10-12mm) screws** for fixing the top and bottom housing and the pedal board to the bottom housing.
   * 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones.
     https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
-  * 5x round magnets with 5mm diameter (3mm or 4mm also works if you glue it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).
+  * 5x round magnets, 5-7mm diameter (3mm or 4mm also works if you stick it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).
     https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
   * 5x 25mm length 2mm diameter steel shafts for the lever.
     https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
