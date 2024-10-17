@@ -14,7 +14,7 @@ Features:
 Thanks to many respectful guys/companies who made their tools or materials free or open source (KiCad, OnShape, InkScape, Raspberry things).
 
 Special thanks to community projects and developers.
-
+And also these projects:
 * RP_Silicon_KiCad: https://github.com/HeadBoffin/RP_Silicon_KiCad
 * Type-C: https://github.com/ai03-2725/Type-C.pretty
 
@@ -77,7 +77,7 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 * 7x Kailh Choc v1. Choose heavy ones (70gf), I think the yellow with 70g force is the best.  
   <img src="doc/choc_v1_heavy.jpg" width="70%">
 * 1x MX-compatible switch, I personally use Gateron POM CJ BOX.
-* 1x Plate-mounting stabilizer for the MX switch, 6.25U.
+* 1x Plate-mounting stabilizer for the MX switch, 6.25U.  
   https://www.amazon.com/GATERON-Stabilizer-Mechanical-Keyboard-Satellite/dp/B0C137DG5Q/
 
 * This is how it looks after soldering.  
@@ -87,29 +87,29 @@ If you're interested in some kind of commercial use, please contact me (Discord,
   <img src="doc/pcb_solder_usb_txrx.jpg" width="60%">
 
 ### Test the PCB
-  * You can test the PCB now, put the firmware in.
-  * All RGB LEDs should light up in a rainbow pattern.
-  * LEDs responds to the button presses.
-  * Musec Pico should be recognized as a USB HID device, here's the test page.  
-    https://greggman.github.io/html5-gamepad-test/
-  * Move a magnetic screwdriver tip close to the TMAG5273 sensor, you'll notice the corresponding axis move in the test page. Please check all 5 sensors.
+* You can test the PCB now, put the firmware in.
+* All RGB LEDs should light up in a rainbow pattern.
+* LEDs responds to the button presses.
+* Musec Pico should be recognized as a USB HID device, here's the test page.  
+  https://greggman.github.io/html5-gamepad-test/
+* Move a magnetic screwdriver tip close to the TMAG5273 sensor, you'll notice the corresponding axis move in the test page. Please check all 5 sensors.
 
 ### Sensor PCB Separation
-  * If everthing works fine, you can cut off (or even bend and snap) the 5 small sensor boards from the main board.  
-    <img src="doc/pcb_cut.jpg" width="80%">
+* If everthing works fine, you can cut off (or even bend and snap) the 5 small sensor boards from the main board.  
+  <img src="doc/pcb_cut.jpg" width="80%">
 
 ### 3D Printing
 #### Printing parameters  
-  * PLA or PETG.
-  * Layer height: 0.2mm
-  * Support: Yes, always.
-  * Glue on bed: Yes, it prevents corner warping.
-  * Files are always in milimeter unit, not inch.
+* PLA or PETG.
+* Layer height: 0.2mm
+* Support: Yes, always.
+* Glue on bed: Yes, it prevents corner warping.
+* Files are always in milimeter unit, not inch.
 
 #### 5x Spinner Parts
-  <img src="doc/print_orientation_1.jpg" width="30%"><img src="doc/print_orientation_2.jpg" width="40%">
+<img src="doc/print_orientation_1.jpg" width="30%"><img src="doc/print_orientation_2.jpg" width="40%">
 
-* Keycap: `Production\3DPrint\musec_pico_keycap.stl`, white. If you have multi-color system, print the 4 triangle marks on the top in gray. 
+* Keycap: `Production\3DPrint\musec_pico_keycap.stl`, white, 5 walls or >=90% infill. If you have multi-color system, print the 4 triangle marks on the top in gray. 
 * Bearing Fixer: `Production\3DPrint\musec_pico_bearing_fixer.stl`, clear transparent.
 * Shaft End: `Production\3DPrint\musec_pico_shaft_end_xxx.stl`, clear transparent, choose the one matches your magnet size.
 * Lever: `Production\3DPrint\musec_pico_lever.stl`, clear transparent.
@@ -125,55 +125,59 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 
 ### Assembly
 #### Other components needed
-  * 5x **M2.5\*6mm screws** for fixing the keycap to the bearing.
-  * 30x **M2\*(6-8mm) screws** for fixing the bearing and the sensor PCB to the lever.
-  * 15x **M3\*8mm screws** for fixing button pads to the bottom housing.
-  * 16x **M3\*(10-12mm) screws** for fixing the top and bottom housing and the pedal board to the bottom housing.
-  * 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones.
-    https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
-  * 5x round magnets, 5-7mm diameter (3mm or 4mm also works if you stick it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).
-    https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
-  * 5x 25mm length 2mm diameter steel shafts for the lever.
-    https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
-  * Some good tape (such as acetate tape or high-temp teflon tape) to fix the magnets in place.
-  * PTFE or UHMW tape for the sliding surfaces.
-  * Silicone anti-slip pads for the bottom.  
-    <img src="doc/anti_slip_pads.jpg" width="60%">
+* 5x **M2.5\*6mm screws** for fixing the keycap to the bearing.
+* 30x **M2\*(6-8mm) screws** for fixing the bearing and the sensor PCB to the lever.
+* 15x **M3\*8mm screws** for fixing button pads to the bottom housing.
+* 16x **M3\*(10-12mm) screws** for fixing the top and bottom housing and the pedal board to the bottom housing.  
+* 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones.
+  https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
+* 5x round magnets, 5-7mm diameter (3mm or 4mm also works if you stick it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).  
+  https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
+* 5x 25mm length 2mm diameter steel shafts for the lever.  
+  https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
+* Some good tape (such as acetate tape or high-temp teflon tape) to fix the magnets in place.
+* PTFE or UHMW tape for the sliding surfaces.
+* Silicone anti-slip pads for the bottom.  
+  <img src="doc/anti_slip_pads.jpg" width="60%">
 
-  * Optional but good to have: A digital piano or music keyboard sustain pedal or a sewing machine pedal with 3.5mm jack. If it comes with 6.25mm jack, you also need a 6.25mm to 3.5mm adapter.
+* Optional but good to have: A digital piano or music keyboard sustain pedal or a sewing machine pedal with 3.5mm jack. If it comes with 6.25mm jack, you also need a 6.25mm to 3.5mm adapter.
 
 #### Steps
-  1. We'll start with the spinner part.  
-    <img src="doc/assemble_1.jpg" width="80%">
-  
-  2. Put the bearing into the bearing fixer, you'll need to bend the fixer a little bit to insert the bearing. Don't worry if the small connection part of the fixer breaks, it's fine. Then screw the bearing fixer to the lever.  
-    <img src="doc/assemble_2.jpg" width="80%">
-  
-  3. Screw the keycap using M2.5 screws mentioned earlier.  
-    <img src="doc/assemble_3.jpg" width="80%">
-  
-  4. Now insert the magnet into the slot at the center. It will be attracted to the screw head. But we still need some tape to fix it in place.  
-    <img src="doc/assemble_4.jpg" width="45%"><img src="doc/assemble_5.jpg" width="45%">
-  
-  5. Screw the sensor PCB to the lever and put a small piece of thin PTFE/UHMW tape on the surface. And lastly insert the shaft into the lever.  
-    <img src="doc/assemble_6.jpg" width="80%">
-  
-  6. Connect 5 SH1.0 cables to the main PCB. Install the main PCB and the pedal PCB to the bottom housing. Use another SH1.0 cable to connect the pedal PCB and the main PCB. The screwholes on pedal board is adjustable. Normally you need to install the pedal board a little higher.    
-    <img src="doc/assemble_7.jpg" width="80%">
-  
-  7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing. If you have keyboard lubricant, you can apply some to the shaft and the stand.  
-    <img src="doc/assemble_lub.jpg" width="60%">  
-  Optional: a pair of plastic ring pads will be helpful to prevent the level from moving. It's 0.5mm thick, 2.1~2.5mm inner diameter, 5-10mm outer diameter.  
-    <img src="doc/assemble_limiter.jpg" width="60%">  
-  <img src="doc/assemble_8.jpg" width="80%">  
+1. We'll start with the spinner part.  
+   <img src="doc/assemble_1.jpg" width="80%">
 
-  8. Install the button pads using M3*8mm screws.  
-    <img src="doc/assemble_9.jpg" width="80%">
+2. Put the bearing into the bearing fixer, you'll need to bend the fixer a little bit to insert the bearing. Don't worry if the small connection part of the fixer breaks, it's fine. Then screw the bearing fixer to the lever.  
+   <img src="doc/assemble_2.jpg" width="80%">
 
-  9. Install the top housing, you need to screw many M3 screws.  
-    <img src="doc/assemble_10.jpg" width="80%">
+3. Screw the keycap using M2.5 screws mentioned earlier.  
+   <img src="doc/assemble_3.jpg" width="80%">
 
-  10. Put the anti-slip pads on the bottom, right on top of the screws.  
+4. Now insert the magnet into the slot at the center. It will be attracted to the screw head. But we still need some tape to fix it in place.  
+   <img src="doc/assemble_4.jpg" width="45%"><img src="doc/assemble_5.jpg" width="45%">
+
+5. Screw the sensor PCB to the lever and put a small piece of thin PTFE/UHMW tape on the surface. And lastly insert the shaft into the lever.  
+   <img src="doc/assemble_6.jpg" width="80%">
+
+6. Connect 5 SH1.0 cables to the main PCB. Install the main PCB and the pedal PCB to the bottom housing. Use another SH1.0 cable to connect the pedal PCB and the main PCB. The screwholes on pedal board is adjustable. Normally you need to install the pedal board a little higher.    
+   <img src="doc/assemble_7.jpg" width="80%">
+
+7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing. If you have keyboard lubricant, you can apply some to the shaft and the stand.  
+   <img src="doc/assemble_lub.jpg" width="60%">  
+   Optional: a pair of plastic ring pads will be helpful to prevent the level from moving. It's 0.5mm thick, 2.1~2.5mm inner diameter, 5-10mm outer diameter.  
+   <img src="doc/assemble_limiter.jpg" width="60%">  
+   <img src="doc/assemble_8.jpg" width="80%">  
+
+8. Install the button pads using M3*8mm screws.  
+   <img src="doc/assemble_9.jpg" width="80%">
+
+9. Install the top housing, you need to screw many M3 screws.  
+   <img src="doc/assemble_10.jpg" width="80%">
+
+10. Put the anti-slip pads on the bottom, right on top of the screws.  
+
+#### Caution
+* Each 3D printer and filament has its own tolerance. If you find the stem holes on the pedal keycap are too tight, use some needle or knife to enlarge them a little bit.
+* Screws are easy to break the 3D printed parts. So don't screw them too tight. When you notice the resistance suddenly increases, stop screwing.
 
 ### Firmware
 * UF2 file is in `Production\Firmware` folder.
@@ -181,7 +185,6 @@ If you're interested in some kind of commercial use, please contact me (Discord,
 * If it's already running Musec Pico firmware, you can either use "update" in command line or hold down at least 4 buttons while connecting to USB to enter update mode.
 * To access the command line, you can use this Web Serial Terminal to connect to the USB serial port of the Musec Pico. (Note: "?" is for help)  
   https://googlechromelabs.github.io/serial-terminal/
-
 
 ### Usage
 * It's very simple. Just plug it in and play.
