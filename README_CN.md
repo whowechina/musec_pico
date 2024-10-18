@@ -32,10 +32,6 @@
 * Groove Pico: https://github.com/whowechina/groove_pico
 * Musec Pico: https://github.com/whowechina/musec_pico
 
-这个 Musec Pico 项目：
-* 大量依赖 3D 打印，所以你需要一个 3D 打印机。
-* 需要具备焊接细小元器件的能力。
-
 ## **声明** ##
 我在个人时间内制作了这个项目，没有任何经济利益或赞助。我将继续改进这个项目。我已尽我所能确保所有内容的准确性和功能性，但总有可能出现错误。如果你因使用这个开源项目而造成时间或金钱的损失，我不能负责。感谢你的理解。
 

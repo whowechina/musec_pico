@@ -34,10 +34,6 @@ You can check out my other cool projects.
 * Geki Pico: https://github.com/whowechina/geki_pico
 * Musec Pico: https://github.com/whowechina/musec_pico
 
-This Musec Pico project:  
-* Heavily depends on 3D printing, you need a 3D printer.
-* Requires skills to solder tiny components.
-
 ## **Disclaimer** ##
 I made this project in my personal time with no financial benefit or sponsorship. I will continue to improve the project. I have done my best to ensure that everything is accurate and functional, there's always a chance that mistakes may occur. I cannot be held responsible for any loss of your time or money that may result from using this open source project. Thank you for your understanding.
 
