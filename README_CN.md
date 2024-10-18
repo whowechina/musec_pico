@@ -20,15 +20,7 @@
 ## 其他项目
 你也可以查看我其他的酷炫项目。
 
-<img src="https://github.com/whowechina/popn_pico/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/iidx_pico/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/iidx_teeny/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/chu_pico/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/mai_pico/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/diva_pico/raw/main/doc/main.jpg" height="100px">
-<img src="https://github.com/whowechina/aic_pico/raw/main/doc/main.gif" height="100px">
-<img src="https://github.com/whowechina/groove_pico/raw/main/doc/main.gif" height="100px">
-<img src="https://github.com/whowechina/musec_pico/raw/main/doc/main.jpg" height="100px">
+<img src="https://github.com/whowechina/popn_pico/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/iidx_pico/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/iidx_teeny/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/chu_pico/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/mai_pico/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/diva_pico/raw/main/doc/main.jpg" height="100px"> <img src="https://github.com/whowechina/aic_pico/raw/main/doc/main.gif" height="100px"> <img src="https://github.com/whowechina/groove_pico/raw/main/doc/main.gif" height="100px"> <img src="https://github.com/whowechina/musec_pico/raw/main/doc/main.jpg" height="100px">
 
 * Popn Pico: https://github.com/whowechina/popn_pico
 * IIDX Pico: https://github.com/whowechina/iidx_pico
