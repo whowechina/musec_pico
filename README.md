@@ -32,7 +32,6 @@ You can check out my other cool projects.
 <img src="https://github.com/whowechina/geki_pico/raw/main/doc/main.jpg" height="100px">
 <img src="https://github.com/whowechina/musec_pico/raw/main/doc/main.jpg" height="100px">
 
-
 * Popn Pico: https://github.com/whowechina/popn_pico
 * IIDX Pico: https://github.com/whowechina/iidx_pico
 * IIDX Teeny: https://github.com/whowechina/iidx_teeny
@@ -55,6 +54,9 @@ I made this project in my personal time with no financial benefit or sponsorship
 It's CC-NC. So DIY for yourself and for your friend, don't make money from it. And plagiarism that doesn’t even dare to mention the original author is not acceptable. Plase note that pooling orders and group buying for raw materials is acceptable. Selling off any leftover components without profit is also acceptable.
 
 If you're interested in some kind of commercial use, please contact me (Discord, QQ group, Wechat group or leave your contact in issue section).
+
+## My Discord Invitation
+https://discord.gg/M8f2PPQFEA
 
 ## HOW TO BUILD
 ### PCB and Components

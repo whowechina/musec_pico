@@ -52,6 +52,9 @@
 
 如果希望商用授权或者购买成品（可能较慢），请联系我（Discord，QQ 群，微信群或者在 issue 区留下你的联系方式）。
 
+## 我的 Discord 服务器邀请
+https://discord.gg/M8f2PPQFEA
+
 ## 如何制作
 ### PCB 和元器件
 * 去 JLCPCB 下单，使用最新的 `Production\PCB\musec_main_xxx.zip` 和 `Procution\PCB\musec_pedal_xxx.zip` 里的 gerber 文件，选择常规 FR-4 板材，黑色或白色，**1.6mm** 厚度。
