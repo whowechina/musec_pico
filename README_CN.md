@@ -126,6 +126,8 @@ https://discord.gg/M8f2PPQFEA
 * 用于滑动表面的 PTFE 或 UHMW 胶带。
 * 底部的硅胶防滑垫。  
   <img src="doc/anti_slip_pads.jpg" width="60%">
+* 可选，但很有用：硬塑料垫片（环垫），0.5mm 厚，2.1~2.5mm 内径，5-10mm 外径。  
+  https://www.amazon.com/Bclla-Zkenshan-washers-Shock-Proof-Leak-Proof-Insulation/dp/B091Y7H9NX/
 * 可选，但很有用：数字钢琴或音乐键盘的延音踏板或带有 3.5mm 插孔的缝纫机踏板。如果带的是 6.25mm 插头，那你还需要一个 6.25mm 到 3.5mm 的转接头。
 
 #### 步骤
@@ -149,9 +151,10 @@ https://discord.gg/M8f2PPQFEA
 
 7. 将已经连接到主板的 SH1.0 电线连接到传感器 PCB 上。然后将杆轴推入底壳上的支架。如果你有键盘润滑剂，你可以涂一些在轴和支架上。  
    <img src="doc/assemble_lub.jpg" width="60%">  
-   可选：一对塑料垫片将有助于防止平衡杆移动，合适的厚度是 0.5mm，内径是 2.1~2.5mm，外径是 5-10mm。  
+   塑料垫片将有助于防止平衡杆移动，它也可以用来调整平衡杆的水平位置来补偿打印的公差。  
+   https://www.amazon.com/Bclla-Zkenshan-washers-Shock-Proof-Leak-Proof-Insulation/dp/B091Y7H9NX/
   <img src="doc/assemble_limiter.jpg" width="60%">  
-  <img src="doc/assemble_8.jpg" width="80%">  
+  <img src="doc/assemble_8.jpg" width="80%">
 
 8. 使用 M3\*8mm 螺丝将按键托底固定。  
   <img src="doc/assemble_9.jpg" width="80%">

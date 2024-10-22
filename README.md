@@ -128,7 +128,8 @@ https://discord.gg/M8f2PPQFEA
 * PTFE or UHMW tape for the sliding surfaces.
 * Silicone anti-slip pads for the bottom.  
   <img src="doc/anti_slip_pads.jpg" width="60%">
-
+* Optional but good to have: plastic washer (ring pads), 0.5mm thick, 2.1~2.5mm inner diameter, 5-10mm outer diameter.  
+  https://www.amazon.com/Bclla-Zkenshan-washers-Shock-Proof-Leak-Proof-Insulation/dp/B091Y7H9NX/
 * Optional but good to have: A digital piano or music keyboard sustain pedal or a sewing machine pedal with 3.5mm jack. If it comes with 6.25mm jack, you also need a 6.25mm to 3.5mm adapter.
 
 #### Steps
@@ -152,9 +153,9 @@ https://discord.gg/M8f2PPQFEA
 
 7. Connect the SH1.0 cables which are already connected to the main board to the sensor PCBs. And then push the lever shafts into the stands on the bottom housing. If you have keyboard lubricant, you can apply some to the shaft and the stand.  
    <img src="doc/assemble_lub.jpg" width="60%">  
-   Optional: a pair of plastic ring pads will be helpful to prevent the level from moving. It's 0.5mm thick, 2.1~2.5mm inner diameter, 5-10mm outer diameter.  
+   A pair of plastic washer will be helpful to prevent the lever from moving. They can also be used to adjust the lever position, compensating for the printing tolerance.  
    <img src="doc/assemble_limiter.jpg" width="60%">  
-   <img src="doc/assemble_8.jpg" width="80%">  
+   <img src="doc/assemble_8.jpg" width="80%">
 
 8. Install the button pads using M3*8mm screws.  
    <img src="doc/assemble_9.jpg" width="80%">
