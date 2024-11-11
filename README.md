@@ -59,7 +59,7 @@ https://discord.gg/M8f2PPQFEA
 * 2x 0603 10ohm resistor, (1-20ohm all work fine) (R3, R4).
 * 2x PJ-313 through-hole 3.5mm audio jacks (J2, J3).  
 * 12x JST-SH1.0 4-pin connectors (JA1 to JA5, JB1 to JB5, Pedal, J1 on pedal board).  
-  https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CXMZ3J1Y?th=1
+  https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CQ28CCQG?th=1
 * 6x JST-SH1.0 dual-end 4-pin cables, 50-100mm length.
    The connector footprint on PCB also supports hand soldering. So if you can't find the connectors or the cables, you can solder the wires directly to the PCB.  
    RC hobby sites often have SH1.0 4P silicone cables, but with only one end connector. You can solder the other end to the PCB. It's still a good choice.
