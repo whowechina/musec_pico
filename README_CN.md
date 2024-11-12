@@ -56,8 +56,8 @@ https://discord.gg/M8f2PPQFEA
 * 2x 0603 5.1kohm 电阻（R1, R2）用于 USB。
 * 2x 0603 10ohm 电阻（1-20ohm 都可以）（R3, R4）。
 * 2x PJ-313 3.5mm 音频插口直插插座（J2, J3）。
-* 12x JST-SH1.0 4P 贴片插座（JA1 到 JA5, JB1 到 JB5, Pedal, 踏板板上的 J1）。  
-  https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CXMZ3J1Y?th=1
+* 12x JST-SH1.0 4P 卧式贴片插座（JA1 到 JA5, JB1 到 JB5, Pedal, 踏板板上的 J1）。  
+  https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CQ28CCQG?th=1
 * 6x JST-SH1.0 双头 4P 电线，50-100mm 长度（55-60mm 最佳）。
   PCB 上的连接器封装也支持手工焊接。所以如果你找不到连接器或电线，你可以直接将导线焊接到 PCB 上。
   航模类网店通常有 SH1.0 4P 硅胶线，但一般只有一个头有连接器。你可以将另一端连接器焊接到 PCB 上，仍旧是一个不错的选择。
