@@ -118,7 +118,7 @@ https://discord.gg/M8f2PPQFEA
 * 30x **M2\*(6-8mm) screws** for fixing the bearing and the sensor PCB to the lever.
 * 15x **M3\*8mm screws** for fixing button pads to the bottom housing.
 * 16x **M3\*(10-12mm) screws** for fixing the top and bottom housing and the pedal board to the bottom housing.  
-* 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones.
+* 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones. They may come packed with a heavy weight oil that arrests rotation, this can be corrected by thoroughly degreasing the bearings and relubricating them with a lightweight oil like Super Lube ISO 68. For example, a soak and spin in 99% isopropyl alcohol, dry on a heated plate to remove the excess alcohol and thin and remaining grease, then a final wash in acetone (if you have all-metal bearings) and additional heated dry before relubricating will ensure the bearings spin freely.
   https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
 * 5x round magnets, 5-7mm diameter (3mm or 4mm also works if you stick it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).  
   https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
