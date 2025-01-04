@@ -113,6 +113,7 @@ static void hid_update()
 
 static void core0_loop()
 {
+    uint64_t next_frame = 0;
     while(1) {
         tud_task();
 
@@ -126,7 +127,8 @@ static void core0_loop()
         hid_update();
         runtime_setup();
 
-        sleep_us(900);
+        sleep_until(next_frame);
+        next_frame += 1001;
     }
 }
 
