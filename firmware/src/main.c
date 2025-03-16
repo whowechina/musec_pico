@@ -93,7 +93,7 @@ static void core1_loop()
 struct __attribute__((packed)) {
     uint8_t buttons;
     uint8_t joy[6];
-} hid_report = {0};
+} hid_report, old_hid_report;
 
 static void hid_update()
 {
@@ -107,7 +107,10 @@ static void hid_update()
         hid_report.joy[i] = spin_units(i);
     }
     if (tud_hid_ready()) {
-        tud_hid_n_report(0, REPORT_ID_JOYSTICK, &hid_report, sizeof(hid_report));
+        if ((memcmp(&hid_report, &old_hid_report, sizeof(hid_report)) != 0) &&
+             tud_hid_report(REPORT_ID_JOYSTICK, &hid_report, sizeof(hid_report))) {
+            old_hid_report = hid_report;
+        }
     }
 }
 
