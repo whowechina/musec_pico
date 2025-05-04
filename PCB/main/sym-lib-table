@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "musec_pico")(type "KiCad")(uri "${KIPRJMOD}/musec_pico.kicad_sym")(options "")(descr ""))
-)
