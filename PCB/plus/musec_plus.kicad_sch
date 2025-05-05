@@ -8295,7 +8295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "musec_pico:SW_Kailh_Choc_V1V2_1.00u_LED"
+		(property "Footprint" "musec_pico:Musec_ChocV1V2_x2_Combo"
 			(at 203.2 125.73 0)
 			(effects
 				(font
@@ -9392,7 +9392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "musec_pico:SW_Kailh_Choc_V1V2_1.00u_LED"
+		(property "Footprint" "musec_pico:Musec_ChocV1V2_x2_Combo"
 			(at 190.5 140.97 0)
 			(effects
 				(font
@@ -9604,7 +9604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "musec_pico:SW_Kailh_Choc_V1V2_1.00u_LED"
+		(property "Footprint" "musec_pico:Musec_ChocV1V2_x2_Combo"
 			(at 177.8 125.73 0)
 			(effects
 				(font
@@ -11125,7 +11125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "musec_pico:SW_Kailh_Choc_V1V2_1.00u_LED"
+		(property "Footprint" "musec_pico:Musec_ChocV1V2_x2_Combo"
 			(at 216.535 140.97 0)
 			(effects
 				(font
@@ -12025,7 +12025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "musec_pico:SW_Kailh_Choc_V1V2_1.00u_LED"
+		(property "Footprint" "musec_pico:Musec_ChocV1V2_x2_Combo"
 			(at 229.235 125.73 0)
 			(effects
 				(font
