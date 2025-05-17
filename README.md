@@ -118,6 +118,7 @@ The following descriptions are for Musec Pico. If you're making Musec Pico+, ple
 * Housing Top: `Production\3DPrint\musec_pico_top.3mf`, gray, print up-side-down. If you have multi-color system, print the logo and lines in black.
 
 #### Other Parts
+Musec Pico and Musec Pico+ share these parts.
 * Pedal: `Production\3DPrint\musec_pico_pedal.stl`, white, print upside down.
 * Aux Buttons: `Production\3DPrint\musec_pico_aux.stl`, clear transparent, print upside down.
 

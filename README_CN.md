@@ -119,6 +119,7 @@ https://discord.gg/M8f2PPQFEA
 * 外壳顶部: `Production\3DPrint\musec_pico_top.3mf`，灰色，倒置打印。如果你有多色系统，用黑色打印标志和线条。
 
 #### 其他部分
+Musec Pico 和 Musec Pico+ 共用这些部件。
 * 踏板: `Production\3DPrint\musec_pico_pedal.stl`，白色，倒置打印。
 * 辅助按键: `Production\3DPrint\musec_pico_aux.stl`，透明，倒置打印。
 
