@@ -130,7 +130,7 @@ https://discord.gg/M8f2PPQFEA
 * 30x **M2\*8mm 螺丝** 用于将轴承和传感器 PCB 固定到平衡杆上。
 * 15x **M3\*8mm 螺丝** 用于将按键托底固定到底壳上。
 * 16x **M3\*(10-12mm) 螺丝** 用于将顶壳和底壳以及踏板板固定到底壳上。
-* 5x 6700zz (10x15x4mm) 轴承用于转盘，买最便宜的就行。如果你买到的轴承阻尼很大很难转动，你需要人工把轴承里面的润滑油（阻尼油）擦干净，然后加入适量的润滑脂。  
+* 5x 6700zz (10x15x4mm, Musec Pico) 或 6702zz (15x21x4mm, Musec Pico+) 轴承用于转盘，买最便宜的就行。如果你买到的轴承阻尼很大很难转动，你需要人工把轴承里面的润滑油（阻尼油）擦干净，然后加入适量的润滑脂。  
   https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
 * 5x 圆形磁铁，Musec Pico 需要直径 5-7mm 的磁铁，Musec Pico+ 必须是 5mm 的磁铁，3mm 或 4mm 也可以，只要你有办法粘住就好，高度 1.5mm 或 2mm，必须是径向/直径磁化的（N-S 极在弧面一侧）。  
   https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
