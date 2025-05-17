@@ -134,8 +134,7 @@ https://discord.gg/M8f2PPQFEA
   https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
 * 5x 圆形磁铁，Musec Pico 需要直径 5-7mm 的磁铁，Musec Pico+ 必须是 5mm 的磁铁，3mm 或 4mm 也可以，只要你有办法粘住就好，高度 1.5mm 或 2mm，必须是径向/直径磁化的（N-S 极在弧面一侧）。  
   https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
-* 5x 长 25mm 直径 2mm 的钢轴用于平衡杆。  
-  https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
+* 5x 直径 2mm 的钢轴用于平衡杆，Musec Pico 用长度 25mm 的，Musec Pico+ 用长度 40mm 的。
 * 对于 Musec Pico+，可以使用 5x 0.4mm\*5mm\*10mm\*6N（线径\*外径\*长度\*圈数）的弹簧，用于增加按键力度。
 * 一些好的胶带（如醋酸胶带或高温聚四氟乙烯胶带）用于固定磁铁。
 * 用于滑动表面的 PTFE 或 UHMW 胶带。

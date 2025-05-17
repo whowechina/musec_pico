@@ -133,8 +133,7 @@ The following descriptions are for Musec Pico. But Musec Pico+ has the same inte
   https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
 * 5x round magnets, 5-7mm diameter for Musec Pico, 5mm only for Musec Pico+, 3mm or 4mm also works if you stick it well, 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).  
   https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
-* 5x 25mm length 2mm diameter steel shafts for the lever.  
-  https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
+* 5x 2mm diameter steel shafts for the lever, 25mm length for Musec Pico, 40mm length for Musec Pico+.
 * For Musec Pico+, you can use 5x 0.4mm\*5mm\*10mm\*6N (wire diameter\*outer diameter\*length\*number of coils) springs to increase the button force.  
 * Some good tape (such as acetate tape or high-temp teflon tape) to fix the magnets in place.
 * PTFE or UHMW tape for the sliding surfaces.
