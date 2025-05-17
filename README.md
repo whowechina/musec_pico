@@ -3,6 +3,8 @@
 
 <img src="doc/main.jpg" width="80%">
 
+There're two versions. Musec Pico uses 52mm spinners and Musec Pico+ uses 74mm spinners. They have the same structure and function the same.
+
 Features:
 * It's small but closely replicates the feel of the arcade controller.
 * Built-in "spacebar" pedal.
@@ -35,7 +37,7 @@ You can check out my other cool projects.
 * Musec Pico: https://github.com/whowechina/musec_pico
 * Ju Pico: https://github.com/whowechina/ju_pico
 * Bishi Pico: https://github.com/whowechina/bishi_pico
-* Bishi Pico: https://github.com/whowechina/nos_pico
+* Nos Pico: https://github.com/whowechina/nos_pico
 
 ## **Disclaimer** ##
 I made this project in my personal time with no financial benefit or sponsorship. I will continue to improve the project. I have done my best to ensure that everything is accurate and functional, there's always a chance that mistakes may occur. I cannot be held responsible for any loss of your time or money that may result from using this open source project. Thank you for your understanding.
@@ -50,7 +52,7 @@ https://discord.gg/M8f2PPQFEA
 
 ## HOW TO BUILD
 ### PCB and Components
-* Go JLCPCB and make order with the gerber zip files (latest `Production\PCB\musec_main_xxx.zip` and `Procution\PCB\musec_pedal_xxx.zip`), regular FR-4 board, black or white color, **1.6mm** thickness.  
+* Go JLCPCB and make order with the gerber zip files (latest `Production\PCB\musec_pico_xxx.zip` for Musec Pico or `Production\PCB\musec_plus_xxx.zip` for Musec Pico+, and `Procution\PCB\musec_pedal_xxx.zip` for both versions), regular FR-4 board, black or white color, **1.6mm** thickness.  
   <img src="doc/pcb.jpg" width="60%">
 * 1x Rasberry Pico Pi Pico or pin-to-pin compatible clones (U1).  
   https://www.raspberrypi.com/products/raspberry-pi-pico
@@ -63,16 +65,18 @@ https://discord.gg/M8f2PPQFEA
 * 2x PJ-313 through-hole 3.5mm audio jacks (J2, J3).  
 * 12x JST-SH1.0 4-pin right angle SMD connectors (JA1 to JA5, JB1 to JB5, Pedal, J1 on pedal board).  
   https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CQ28CCQG?th=1
-* 6x JST-SH1.0 dual-end 4-pin cables, 50-100mm length.
+* 6x JST-SH1.0 dual-end 4-pin cables, 60mm length * 5, and 100mm length * 1.
    The connector footprint on PCB also supports hand soldering. So if you can't find the connectors or the cables, you can solder the wires directly to the PCB.  
    RC hobby sites often have SH1.0 4P silicone cables, but with only one end connector. You can solder the other end to the PCB. It's still a good choice.
 * 7x Kailh Choc v1. Choose heavy ones (70gf), I think the yellow with 70g force is the best.  
   <img src="doc/choc_v1_heavy.jpg" width="70%">
+* For Musec Pico+, you can use one switch per button, or 2x switches per button to get more force.  
+  <img src ="doc/switch_1.jpg" width="30%"> <img src ="doc/switch_2.jpg" width="30%">
 * 1x MX-compatible switch, I personally use Gateron POM CJ BOX.
 * 1x Plate-mounting stabilizer for the MX switch, 6.25U.  
   https://www.amazon.com/GATERON-Stabilizer-Mechanical-Keyboard-Satellite/dp/B0C137DG5Q/
 
-* This is how it looks after soldering.  
+* This is how it looks after soldering (there might be changes in newer versions of PCB). I'm only showing the Musec Pico, but the Musec Pico+ is similar.  
   <img src="doc/pcb_solder_1.jpg" width="90%">  
   <img src="doc/pcb_solder_2.jpg" width="90%">
 * Becareful of 2 pin holes. It's a common oversight to either forget to solder them or to leave air bubbles during the process. To avoid this, solder slowly from one side of the hole, using minimal solder wire and a generous amount of flux.  
@@ -91,6 +95,8 @@ https://discord.gg/M8f2PPQFEA
   <img src="doc/pcb_cut.jpg" width="80%">
 
 ### 3D Printing
+The following descriptions are for Musec Pico. If you're making Musec Pico+, please find the corresponding files with `+` in the name.
+
 #### Printing parameters  
 * PLA or PETG.
 * Layer height: 0.2mm
@@ -116,17 +122,20 @@ https://discord.gg/M8f2PPQFEA
 * Aux Buttons: `Production\3DPrint\musec_pico_aux.stl`, clear transparent, print upside down.
 
 ### Assembly
+The following descriptions are for Musec Pico. But Musec Pico+ has the same internal structure, so the assembly is similar.
+
 #### Other components needed
-* 5x **M2.5\*6mm screws** for fixing the keycap to the bearing.
-* 30x **M2\*(6-8mm) screws** for fixing the bearing and the sensor PCB to the lever.
+* **M2.5\*6mm screws** (5x for Musec Pico, 15x for Musec Pico+) for fixing the keycap to the bearing.
+* 30x **M2\*8mm screws** for fixing the bearing and the sensor PCB to the lever.
 * 15x **M3\*8mm screws** for fixing button pads to the bottom housing.
 * 16x **M3\*(10-12mm) screws** for fixing the top and bottom housing and the pedal board to the bottom housing.  
 * 5x 6700zz (10x15x4mm) bearings for the spinner, just buy cheapest ones. They may come packed with a heavy weight oil that arrests rotation, this can be corrected by thoroughly degreasing the bearings and relubricating them with a lightweight oil like Super Lube ISO 68. For example, a soak and spin in 99% isopropyl alcohol, dry on a heated plate to remove the excess alcohol and thin and remaining grease, then a final wash in acetone (if you have all-metal bearings) and additional heated dry before relubricating will ensure the bearings spin freely.
   https://www.amazon.com/uxcell-6700ZZ-Groove-Bearings-Shielded/dp/B082PPYZQX/
-* 5x round magnets, 5-7mm diameter (3mm or 4mm also works if you stick it well), 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).  
+* 5x round magnets, 5-7mm diameter for Musec Pico, 5mm only for Musec Pico+, 3mm or 4mm also works if you stick it well, 1.5mm or 2mm tall, MUST be radially/diametrically magnetized (N-S poles on the curved side).  
   https://wargameportal.com/products/special-diametrically-magnetized-50pcs-5mm-x-2mm-3-16-x-1-16-disc-magnets?variant=49014932209942
 * 5x 25mm length 2mm diameter steel shafts for the lever.  
   https://www.walmart.com/ip/Unique-Bargains-RC-Toy-Car-Frame-Part-Stainless-Steel-Round-Rod-Shaft-25mm-x-2mm-40-Pcs/108734138?wmlspartner=wlpa&selectedSellerId=571
+* For Musec Pico+, you can use 5x 0.4mm\*5mm\*10mm\*6N (wire diameter\*outer diameter\*length\*number of coils) springs to increase the button force.  
 * Some good tape (such as acetate tape or high-temp teflon tape) to fix the magnets in place.
 * PTFE or UHMW tape for the sliding surfaces.
 * Silicone anti-slip pads for the bottom.  
@@ -163,10 +172,12 @@ https://discord.gg/M8f2PPQFEA
 8. Install the button pads using M3*8mm screws.  
    <img src="doc/assemble_9.jpg" width="80%">
 
-9. Install the top housing, you need to screw many M3 screws.  
+9. Only for Musec Pico+, you can put springs onto the spring seats.
+
+10. Install the top housing, you need to screw many M3 screws.  
    <img src="doc/assemble_10.jpg" width="80%">
 
-10. Put the anti-slip pads on the bottom, right on top of the screws.  
+11. Put the anti-slip pads on the bottom, right on top of the screws.  
 
 #### Caution
 * Each 3D printer and filament has its own tolerance. If you find the stem holes on the pedal keycap are too tight, use some needle or knife to enlarge them a little bit.
