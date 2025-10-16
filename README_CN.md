@@ -13,7 +13,7 @@
 * 命令行配置。
 * 所有源文件开放。
 
-感谢许多尊敬的爱好者和公司将他们的工具或材料免费或开源（KiCad，OnShape，InkScape，Raspberry 相关工具, 嘉立创，等）。
+感谢许多令人尊敬的爱好者和公司将他们的工具或材料免费或开源（KiCad，OnShape，InkScape，Raspberry 相关工具, 嘉立创，等）。
 
 特别感谢社区项目和开发者的帮助，还有如下项目：
 * RP_Silicon_KiCad: https://github.com/HeadBoffin/RP_Silicon_KiCad
