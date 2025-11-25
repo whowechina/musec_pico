@@ -3009,6 +3009,12 @@
 		(uuid "35fae1d1-8563-453f-97a0-f512c51e7c4a")
 	)
 	(junction
+		(at 83.82 64.135)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39b3c983-aeb6-4824-8b10-a59cdb77f3bf")
+	)
+	(junction
 		(at 63.5 99.695)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3758,6 +3764,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.805 71.12) (xy 90.805 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b9672e8-bda5-491e-bf7c-672fc5d1fcdd")
+	)
+	(wire
+		(pts
 			(xy 95.25 199.39) (xy 107.95 199.39)
 		)
 		(stroke
@@ -4138,6 +4154,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.805 78.105) (xy 95.885 78.105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38a0b768-071a-4eb1-b7ce-a64e51faccdb")
+	)
+	(wire
+		(pts
 			(xy 338.455 151.13) (xy 338.455 163.195)
 		)
 		(stroke
@@ -4275,6 +4301,16 @@
 			(type default)
 		)
 		(uuid "4e0043d0-9da2-4b42-b248-035e21981003")
+	)
+	(wire
+		(pts
+			(xy 83.82 71.12) (xy 83.82 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50baf747-7586-4322-b760-b4c64c4e2ee9")
 	)
 	(wire
 		(pts
@@ -4858,6 +4894,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 64.135) (xy 83.82 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "845bbe8b-c4d6-4f14-9d22-8ab2df5608f2")
+	)
+	(wire
+		(pts
 			(xy 305.435 212.725) (xy 318.135 212.725)
 		)
 		(stroke
@@ -5168,6 +5214,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.805 66.04) (xy 90.805 64.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a451ebe4-6c23-418b-a143-2c4d62976506")
+	)
+	(wire
+		(pts
 			(xy 67.945 69.215) (xy 67.945 70.485)
 		)
 		(stroke
@@ -5358,6 +5414,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 80.645) (xy 95.885 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4d077e9-4d76-4341-99d0-422fea6786fa")
+	)
+	(wire
+		(pts
 			(xy 158.75 170.18) (xy 171.45 170.18)
 		)
 		(stroke
@@ -5415,6 +5481,16 @@
 			(type default)
 		)
 		(uuid "b8ddc2d4-b284-4d48-9546-216b3df00ffe")
+	)
+	(wire
+		(pts
+			(xy 90.805 64.135) (xy 83.82 64.135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b97118bf-5157-4990-92c3-87a93e6458e4")
 	)
 	(wire
 		(pts
@@ -7158,6 +7234,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 83.82 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05a3aee4-4140-4054-ac5d-d44c610f9362")
+		(property "Reference" "R3"
+			(at 82.55 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5K1"
+			(at 83.185 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0e5c811-d228-4859-86ff-f8042fd1bb6f")
+		)
+		(pin "2"
+			(uuid "bb4a1fab-70b4-49f0-a306-b529433a09f8")
+		)
+		(instances
+			(project "musec_plus"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 305.435 230.505 0)
 		(unit 1)
@@ -8191,6 +8345,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 90.805 68.58 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37b39000-7a21-4461-be67-8cf028ced8c2")
+		(property "Reference" "R4"
+			(at 89.535 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5K1"
+			(at 89.535 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 90.805 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.805 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 90.805 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23186"
+			(at 90.805 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0563bca-c256-4d65-a267-8ff6e4506b3c")
+		)
+		(pin "2"
+			(uuid "47ed0617-716b-4d89-9577-2d4b46d6b7f4")
+		)
+		(instances
+			(project "musec_plus"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "musec_pico:WS2812B_Unified")
 		(at 222.25 177.8 0)
 		(unit 1)
@@ -9141,6 +9373,71 @@
 			(project ""
 				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 83.82 64.135 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7815705c-c624-481a-af1b-5f8d0dce7c25")
+		(property "Reference" "#PWR010"
+			(at 83.82 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 80.01 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 83.82 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "396e17f6-5120-4185-afe0-0ae321bdd942")
+		)
+		(instances
+			(project "musec_plus"
+				(path "/2e3f5573-c264-4a8b-a2f0-0e6473d39aad"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
