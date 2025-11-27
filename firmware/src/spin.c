@@ -31,7 +31,12 @@ void spin_init()
     gpio_init(BUS_I2C_SCL);
     gpio_set_function(BUS_I2C_SCL, GPIO_FUNC_I2C);
     gpio_pull_up(BUS_I2C_SCL);
-    i2c_init(BUS_I2C, BUS_I2C_FREQ);
+
+    if (musec_cfg->spin.fast_i2c) {
+        i2c_init(BUS_I2C, BUS_I2C_FAST_FREQ);
+    } else {
+        i2c_init(BUS_I2C, BUS_I2C_FREQ);
+    }
 
     for (int i = 0; i < SPIN_NUM; i++) {
         uint8_t ce = spin_enablers[i];
@@ -66,19 +71,21 @@ static uint16_t spin_reading[SPIN_NUM];
 
 void spin_update()
 {
-    static bool flip = false;
-    flip = !flip;
+    static int count = 0;
 
     for (int i = 0; i < SPIN_NUM; i++) {
-        if (flip ^ (i % 2)) {
+        if (!musec_cfg->spin.fast_i2c && (i != count)) {
             continue;
         }
+
         tmag5273_use(i);
         spin_reading[i] = tmag5273_read_angle();
-        if (musec_cfg->spin.reversed[i]) {
+        if (musec_cfg->spin.reversed & (1 << i)) {
             spin_reading[i] = FULL_SCALE - spin_reading[i];
         }
     }
+
+    count = (count + 1) % SPIN_NUM;
 }
 
 uint16_t spin_read(uint8_t index)

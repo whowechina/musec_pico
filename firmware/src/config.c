@@ -13,6 +13,7 @@ musec_cfg_t *musec_cfg;
 
 static musec_cfg_t default_cfg = {
     .spin = {
+        .fast_i2c = false,
         .units_per_turn = 80,
     },
     .light = {

@@ -27,11 +27,12 @@ static void disp_light()
 static void disp_spin()
 {
     printf("[Spin]\n");
+    printf("  Fast I2C: %s.\n", musec_cfg->spin.fast_i2c ? "ON" : "OFF");
     printf("  Units Per Turn: %d.\n", musec_cfg->spin.units_per_turn);
     for (int i = 0; i < 5; i++) {
         printf("  Spinner %d: %s, %s.\n", i + 1,
                spin_present(i) ? "OK" : "ERROR",
-               musec_cfg->spin.reversed[i] ? "Reversed" : "Forward");
+               musec_cfg->spin.reversed & (1 << i) ? "Reversed" : "Forward");
     }
 }
 
@@ -137,15 +138,36 @@ static void handle_spin_invert(int id, const char *dir)
         return;
     }
 
-    musec_cfg->spin.reversed[id] = match;
+    if (match == 0) {
+        musec_cfg->spin.reversed &= ~(1 << id);
+    } else if (match == 1) {
+        musec_cfg->spin.reversed |= (1 << id);
+    }
 
     config_changed();
     disp_spin();
 }
 
+static void handle_i2c_option(const char *option)
+{
+    const char *usage = "Usage: spin fast_i2c <on|off>\n";
+    const char *choices[] = {"off", "on"};
+    int match = cli_match_prefix(choices, count_of(choices), option);
+    if (match < 0) {
+        printf(usage);
+        return;
+    }
+
+    musec_cfg->spin.fast_i2c = match;
+    save_request(true); // immediate save
+    disp_spin();
+    printf("Note: Please reboot the device to apply I2C speed change.\n");
+}
+
 static void handle_spin(int argc, char *argv[])
 {
     const char *usage = "Usage: spin rate <units_per_turn>\n"
+                        "       spin fast_i2c <on|off>\n"
                         "       spin <id> <normal|reverse>\n"
                         "  units_per_turn: 20..255\n"
                         "  id: 1..5\n";
@@ -154,7 +176,7 @@ static void handle_spin(int argc, char *argv[])
         return;
     }
 
-    const char *choices[] = { "1", "2", "3", "4", "5", "rate" };
+    const char *choices[] = { "1", "2", "3", "4", "5", "fast_i2c", "rate" };
     int match = cli_match_prefix(choices, count_of(choices), argv[0]);
     if (match < 0) {
         printf(usage);
@@ -162,6 +184,10 @@ static void handle_spin(int argc, char *argv[])
     }
 
     if (match == 5) {
+        handle_i2c_option(argv[1]);
+        return;
+    }
+    if (match == 6) {
         handle_spin_rate(argv[1]);
         return;
     }

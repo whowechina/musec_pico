@@ -12,7 +12,8 @@
 #define BUS_I2C i2c0
 #define BUS_I2C_SDA 0
 #define BUS_I2C_SCL 1
-#define BUS_I2C_FREQ 266*1000
+#define BUS_I2C_FREQ 166*1000
+#define BUS_I2C_FAST_FREQ 400*1000
 
 #define SPIN_DEF { 13, 12, 11, 10, 9 }
  
