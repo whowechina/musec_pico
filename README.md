@@ -61,7 +61,7 @@ https://discord.gg/M8f2PPQFEA
 * 6x TMAG5273A1 or TMAG5273A2, in SOT23-6 (U3 to U7).  
 * 12x 0603 0.1uF (0.1~1uF all fine) capacitors (all Capacitors).
 * 2x 0603 5.1kohm resistors (R1, R2) for the USB.
-* 2x 0603 10ohm resistor, (1-20ohm all work fine) (R3, R4).
+* 2x 0603 5.1kohm resistors (R3, R4, 1k-20kohm all work fine) for I2C pull-up.
 * 2x PJ-313 through-hole 3.5mm audio jacks (J2, J3).  
 * 12x JST-SH1.0 4-pin right angle SMD connectors (JA1 to JA5, JB1 to JB5, Pedal, J1 on pedal board).  
   https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CQ28CCQG?th=1

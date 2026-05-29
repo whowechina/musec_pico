@@ -62,7 +62,7 @@ https://discord.gg/M8f2PPQFEA
 * 6x TMAG5273A1 或 TMAG5273A2, SOT23-6 封装（U3 到 U7）。
 * 12x 0603 0.1uF 电容（0.1~1uF 都可以）（板上所有电容）。
 * 2x 0603 5.1kohm 电阻（R1, R2）用于 USB。
-* 2x 0603 10ohm 电阻（1-20ohm 都可以）（R3, R4，新版本可能取消）。
+* 2x 0603 5.1kohm 电阻（R3, R4，1k-20kohm 都可以）用于 I2C 上拉。
 * 2x PJ-313 3.5mm 音频插口直插插座（J2, J3）。
 * 12x JST-SH1.0 4P 卧式贴片插座（JA1 到 JA5, JB1 到 JB5, Pedal, 踏板板上的 J1）。  
   https://www.amazon.com/Kidisoii-Connector-Mounting-Vertical-SH1-0-SMT-Ver/dp/B0CQ28CCQG?th=1
