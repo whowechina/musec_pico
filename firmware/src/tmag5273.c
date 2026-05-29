@@ -13,7 +13,7 @@
 
 #include "tmag5273.h"
 
-const uint8_t TMAG5273_DEF_ADDRS[] = {  0x44, 0x35, 0x22, 0x78, };
+const uint8_t TMAG5273_DEF_ADDRS[] = {  0x35, 0x22, 0x78, 0x44, };
 
 #define IO_TIMEOUT_US 1000
 
