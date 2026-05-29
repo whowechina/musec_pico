@@ -59,7 +59,7 @@ https://discord.gg/M8f2PPQFEA
   https://www.raspberrypi.com/products/raspberry-pi-pico
 * 1x USB Type-C 插座 (918-418K2023S40001 或 KH-TYPE-C-16P)
 * 28x WS2812B-3528 RGB LED（板上所有 RGB LED）。
-* 6x TMAG5273A1 或 TMAG5273A2, SOT23-6 封装（U3 到 U7）。
+* 6x TMAG5273, 所有版本（比如 A1, B2, 等等）都可以, SOT23-6 封装（U3 到 U7）。
 * 12x 0603 0.1uF 电容（0.1~1uF 都可以）（板上所有电容）。
 * 2x 0603 5.1kohm 电阻（R1, R2）用于 USB。
 * 2x 0603 5.1kohm 电阻（R3, R4，1k-20kohm 都可以）用于 I2C 上拉。

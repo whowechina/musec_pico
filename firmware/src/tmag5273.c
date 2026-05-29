@@ -13,7 +13,7 @@
 
 #include "tmag5273.h"
 
-#define TMAG5273_DEF_ADDR 0x35
+const uint8_t TMAG5273_DEF_ADDRS[] = {  0x44, 0x35, 0x22, 0x78, };
 
 #define IO_TIMEOUT_US 1000
 
@@ -22,7 +22,7 @@ static struct {
     uint8_t addr;
     uint16_t cache;
     bool present;
-} instances[16] = { { i2c0, TMAG5273_DEF_ADDR } };
+} instances[16] = { { i2c0, TMAG5273_DEF_ADDRS[0] } };
 #define INSTANCE_NUM count_of(instances)
 
 static int current_instance = 0;
@@ -61,8 +61,13 @@ void tmag5273_init(unsigned instance, i2c_inst_t *i2c_port)
     if (instance < INSTANCE_NUM) {
         current_instance = instance;
         INSTANCE.port = i2c_port;
-        INSTANCE.addr = TMAG5273_DEF_ADDR;
-        INSTANCE.present = tmag5273_change_addr(TMAG5273_DEF_ADDR + 1 + instance);
+        for (int i = 0; i < count_of(TMAG5273_DEF_ADDRS); i++) {
+            INSTANCE.addr = TMAG5273_DEF_ADDRS[i];
+            INSTANCE.present = tmag5273_change_addr(INSTANCE.addr + 1 + instance);
+            if (INSTANCE.present) {
+                break;
+            }
+        }
     }
 }
 

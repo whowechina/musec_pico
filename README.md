@@ -58,7 +58,7 @@ https://discord.gg/M8f2PPQFEA
   https://www.raspberrypi.com/products/raspberry-pi-pico
 * 1x USB Type-C socket (918-418K2023S40001 or KH-TYPE-C-16P)
 * 28x WS2812B-3528 RGB LEDs (all RGB LEDs).
-* 6x TMAG5273A1 or TMAG5273A2, in SOT23-6 (U3 to U7).  
+* 6x TMAG5273, all device versions (such as A1, B2, etc.) works, SOT23-6 (U3 to U7).  
 * 12x 0603 0.1uF (0.1~1uF all fine) capacitors (all Capacitors).
 * 2x 0603 5.1kohm resistors (R1, R2) for the USB.
 * 2x 0603 5.1kohm resistors (R3, R4, 1k-20kohm all work fine) for I2C pull-up.
