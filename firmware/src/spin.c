@@ -7,7 +7,9 @@
 #include "spin.h"
 
 #include <stdint.h>
+#include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 #include "hardware/gpio.h"
 #include "hardware/timer.h"
@@ -67,25 +69,47 @@ bool spin_present(uint8_t index)
     return tmag5273_is_present(index);
 }
 
-static uint16_t spin_reading[SPIN_NUM];
+typedef struct {
+    uint16_t angle;
+    uint16_t old_angle;
+    int queue;
+    uint8_t units;
+} spin_ctx_t;
+
+static spin_ctx_t spin_ctx[SPIN_NUM];
 
 void spin_update()
 {
-    static int count = 0;
+    static int index = 0;
+    index = (index + 1) % SPIN_NUM;
 
-    for (int i = 0; i < SPIN_NUM; i++) {
-        if (!musec_cfg->spin.fast_i2c && (i != count)) {
-            continue;
-        }
+    spin_ctx_t *ctx = &spin_ctx[index];
 
-        tmag5273_use(i);
-        spin_reading[i] = tmag5273_read_angle();
-        if (musec_cfg->spin.reversed & (1 << i)) {
-            spin_reading[i] = FULL_SCALE - spin_reading[i];
-        }
+    tmag5273_use(index);
+    uint16_t raw = tmag5273_read_angle();
+
+    ctx->angle = musec_cfg->spin.reversed & (1 << index) ? FULL_SCALE - raw : raw;
+
+    int delta = ctx->angle - ctx->old_angle;
+    if (delta > FULL_SCALE / 2) {
+        delta -= FULL_SCALE;
+    } else if (delta < -FULL_SCALE / 2) {
+        delta += FULL_SCALE;
     }
 
-    count = (count + 1) % SPIN_NUM;
+    if (abs(delta) <= 8) {
+        return;
+    }
+
+    ctx->old_angle = ctx->angle;
+
+    ctx->queue += delta;
+
+    int step = FULL_SCALE / musec_cfg->spin.units_per_turn;
+    int num_steps = ctx->queue / step;
+
+    ctx->units += num_steps;
+    ctx->queue -= step * num_steps;
 }
 
 uint16_t spin_read(uint8_t index)
@@ -93,26 +117,13 @@ uint16_t spin_read(uint8_t index)
     if (index >= SPIN_NUM) {
         return 0;
     }
-    return spin_reading[index];
+    return spin_ctx[index].angle;
 }
 
 uint16_t spin_units(uint8_t index)
 {
-    static uint16_t last[SPIN_NUM] = {0};
-    static int counter[SPIN_NUM] = {0};
-
-    int delta = spin_reading[index] - last[index];
-    if (delta > FULL_SCALE / 2) {
-        delta -= FULL_SCALE;
-    } else if (delta < -FULL_SCALE / 2) {
-        delta += FULL_SCALE;
+    if (index >= SPIN_NUM) {
+        return 0;
     }
-
-    int resolution = FULL_SCALE / musec_cfg->spin.units_per_turn;
-    if ((delta <= -resolution) || (delta >= resolution)) {
-        last[index] = spin_reading[index];
-        counter[index] += delta;
-    }
-
-    return counter[index] * musec_cfg->spin.units_per_turn / FULL_SCALE;
+    return spin_ctx[index].units;
 }

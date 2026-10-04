@@ -99,7 +99,7 @@ bool tmag5273_init_sensor()
 {
     tmag5273_write_reg(0x03, 0x01 << 2); // Enable angle calculation
     tmag5273_write_reg(0x02, 0x03 << 4); // X-Y
-    tmag5273_write_reg(0x00, 0x03 << 2); // 8x average mode
+    tmag5273_write_reg(0x00, 0x05 << 2); // 32x average mode
     tmag5273_write_reg(0x01, 0x02); // Continuous mode
     return true;
 }
