@@ -8,7 +8,7 @@
 #include "pico/stdlib.h"
 
 #include "config.h"
-#include "save.h"
+#include "savedata.h"
 #include "cli.h"
 
 #include "spin.h"
@@ -159,7 +159,7 @@ static void handle_i2c_option(const char *option)
     }
 
     musec_cfg->spin.fast_i2c = match;
-    save_request(true); // immediate save
+    savedata_save(true); // immediate save
     disp_spin();
     printf("Note: Please reboot the device to apply I2C speed change.\n");
 }
@@ -224,7 +224,7 @@ static void handle_pedal(int argc, char *argv[])
 
 static void handle_save()
 {
-    save_request(true);
+    savedata_save(true);
 }
 
 static void handle_factory_reset()
