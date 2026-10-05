@@ -96,23 +96,36 @@ static void core1_loop()
 struct __attribute__((packed)) {
     uint8_t buttons;
     uint8_t joy[6];
-} hid_report, old_hid_report;
+} hid_joy, hid_joy_sent;
 
-static void hid_update()
+static void gen_hid_report()
 {
     uint16_t buttons = button_read();
     bool ext_pedal = buttons & 0x100;
     if (ext_pedal ^ musec_runtime.ext_pedal_invert) {
         buttons |= 0x80; // combine internal and external pedal
     }
-    hid_report.buttons = buttons & 0xff;
+    hid_joy.buttons = buttons & 0xff;
     for (int i = 0; i < 5; i++) {
-        hid_report.joy[i] = spin_units(i);
+        hid_joy.joy[i] = spin_units(i);
     }
+}
+
+static void hid_update()
+{
+    static uint64_t last_report_time = 0;
+
+    gen_hid_report();
+
     if (tud_hid_ready()) {
-        if ((memcmp(&hid_report, &old_hid_report, sizeof(hid_report)) != 0) &&
-             tud_hid_report(REPORT_ID_JOYSTICK, &hid_report, sizeof(hid_report))) {
-            old_hid_report = hid_report;
+        uint64_t now = time_us_64();
+        if ((memcmp(&hid_joy, &hid_joy_sent, sizeof(hid_joy)) == 0) &&
+            (now - last_report_time < 10000)) {
+            return;
+        }
+        last_report_time = now;
+        if (tud_hid_report(REPORT_ID_JOYSTICK, &hid_joy, sizeof(hid_joy))) {
+            hid_joy_sent = hid_joy;
         }
     }
 }
@@ -130,7 +143,9 @@ static void core0_loop()
 
         button_update();
         spin_update();
+
         hid_update();
+
         runtime_setup();
 
         sleep_until(next_frame);
