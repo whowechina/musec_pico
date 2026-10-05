@@ -15,6 +15,10 @@ static musec_cfg_t default_cfg = {
     .spin = {
         .fast_i2c = false,
         .units_per_turn = 80,
+        .suppress = {
+            .threshold = 0,
+            .decay = 25,
+        }
     },
     .light = {
         .level = 128,
@@ -29,6 +33,15 @@ musec_runtime_t musec_runtime;
 
 static void config_loaded()
 {
+    if (musec_cfg->spin.units_per_turn == 0) {
+        musec_cfg->spin.units_per_turn = default_cfg.spin.units_per_turn;
+        config_changed();
+    }
+
+    if (musec_cfg->spin.suppress.decay == 0) {
+        musec_cfg->spin.suppress = default_cfg.spin.suppress;
+        config_changed();
+    }
 }
 
 void config_changed()

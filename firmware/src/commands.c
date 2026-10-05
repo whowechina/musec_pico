@@ -29,6 +29,10 @@ static void disp_spin()
     printf("[Spin]\n");
     printf("  Fast I2C: %s.\n", musec_cfg->spin.fast_i2c ? "ON" : "OFF");
     printf("  Units Per Turn: %d.\n", musec_cfg->spin.units_per_turn);
+    printf("  Suppress Threshold: %d%s.\n", musec_cfg->spin.suppress.threshold,
+           musec_cfg->spin.suppress.threshold == 0 ? " (OFF)" : "");
+    printf("  Suppress Decay: %d.\n", musec_cfg->spin.suppress.decay);
+
     for (int i = 0; i < 5; i++) {
         printf("  Spinner %d: %s, %s.\n", i + 1,
                spin_present(i) ? "OK" : "ERROR",
@@ -126,6 +130,28 @@ static void handle_spin_rate(const char *rate)
     disp_spin();
 }
 
+static void handle_spin_suppress(const char *threshold_arg, const char *decay_arg)
+{
+    const char *usage = "Usage: spin suppress <threshold> [decay]\n"
+                        "  threshold: 0..255 (0 disables suppression)\n"
+                        "  decay: 1..32\n";
+    int threshold = cli_extract_non_neg_int(threshold_arg, 0);
+    int decay = decay_arg ? cli_extract_non_neg_int(decay_arg, 0) : -1;
+
+    if ((threshold < 0) || (threshold > 255) ||
+        (decay_arg && ((decay < 1) || (decay > 32)))) {
+        printf(usage);
+        return;
+    }
+
+    musec_cfg->spin.suppress.threshold = threshold;
+    if (decay_arg) {
+        musec_cfg->spin.suppress.decay = decay;
+    }
+    config_changed();
+    disp_spin();
+}
+
 static void handle_spin_invert(int id, const char *dir)
 {
     const char *usage = "Usage: spin <id> <forward|reversed>\n"
@@ -168,17 +194,34 @@ static void handle_spin(int argc, char *argv[])
 {
     const char *usage = "Usage: spin rate <units_per_turn>\n"
                         "       spin fast_i2c <on|off>\n"
+                        "       spin suppress <threshold> [decay]\n"
                         "       spin <id> <normal|reverse>\n"
                         "  units_per_turn: 20..255\n"
+                        "  threshold: 0..255 (0 disables suppression)\n"
+                        "  decay: 1..32\n"
                         "  id: 1..5\n";
-    if (argc != 2) {
+    if (argc < 1) {
         printf(usage);
         return;
     }
 
-    const char *choices[] = { "1", "2", "3", "4", "5", "fast_i2c", "rate" };
+    const char *choices[] = { "1", "2", "3", "4", "5", "fast_i2c", "rate", "suppress" };
     int match = cli_match_prefix(choices, count_of(choices), argv[0]);
     if (match < 0) {
+        printf(usage);
+        return;
+    }
+
+    if (match == 7) {
+        if ((argc != 2) && (argc != 3)) {
+            printf(usage);
+            return;
+        }
+        handle_spin_suppress(argv[1], (argc == 3) ? argv[2] : NULL);
+        return;
+    }
+
+    if (argc != 2) {
         printf(usage);
         return;
     }
@@ -237,7 +280,7 @@ void commands_init()
 {
     cli_register("display", handle_display, "Display all config.");
     cli_register("level", handle_level, "Set LED brightness level.");
-    cli_register("spin", handle_spin, "Set spin rate.");
+    cli_register("spin", handle_spin, "Configure spin options.");
     cli_register("pedal", handle_pedal, "Set pedal mode.");
     cli_register("save", handle_save, "Save config to flash.");
     cli_register("factory", handle_factory_reset, "Reset everything to default.");

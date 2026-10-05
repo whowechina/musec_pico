@@ -19,7 +19,11 @@ typedef struct __attribute__((packed)) {
         uint8_t units_per_turn;
         bool fast_i2c;
         uint8_t reversed;
-        uint8_t reserved[3];
+        struct {
+            uint8_t threshold;
+            uint8_t decay;
+        } suppress;
+        uint8_t not_used;
     } spin;
     struct {
         bool internal;
